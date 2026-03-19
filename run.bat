@@ -1,0 +1,2 @@
+cd F:\AutomationWorkSpaceEcpliseIde\TutorialsNinja
+mvn test
