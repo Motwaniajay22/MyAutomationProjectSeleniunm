@@ -7,7 +7,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="excelDataLoginMultiple"/>
+          <include name="TC001_validLogin"/>
         </methods>
       </class> <!-- com.tutorialsninja.testcases.LoginTest -->
     </classes>

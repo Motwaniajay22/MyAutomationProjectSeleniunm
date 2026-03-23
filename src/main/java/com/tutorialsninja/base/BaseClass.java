@@ -2,6 +2,7 @@ package com.tutorialsninja.base;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
@@ -14,7 +15,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
+import org.openqa.selenium.io.FileHandler;
 import org.testng.annotations.AfterMethod;
 
 import org.testng.annotations.BeforeMethod;
@@ -81,14 +82,15 @@ public class BaseClass {
 
 	}
 	
-	public String captureScreenShot(String tname)
+	public static String captureScreenShot(String tname) throws IOException
 	{
 		String timeStamp = new SimpleDateFormat("yyyymmddhhmmss").format(new Date());
 		TakesScreenshot takeScreenShot = (TakesScreenshot) driver;
 		File sourceFile = takeScreenShot.getScreenshotAs(OutputType.FILE);
-		String targetFilePath = System.getProperty("user.dir")+"\\Screenshots"+tname+"_"+timeStamp+".png";
+		String targetFilePath = System.getProperty("user.dir")+"\\Screenshots\\"+tname+"_"+timeStamp+".png";
 		File targetFile= new File(targetFilePath);
-		sourceFile.renameTo(targetFile);
+		//sourceFile.renameTo(targetFile);
+		FileHandler.copy(sourceFile, targetFile);
 		return targetFilePath;
 	}
 

@@ -32,7 +32,7 @@ public class MyListeners implements ITestListener {
 		test.log(Status.INFO, result.getThrowable().getMessage());
 
 		try {
-			String imgPath = new BaseClass().captureScreenShot(result.getName());
+			String imgPath =  BaseClass.captureScreenShot(result.getName());
 			test.addScreenCaptureFromPath(imgPath);
 		} catch (Exception e) {
 			e.printStackTrace();
