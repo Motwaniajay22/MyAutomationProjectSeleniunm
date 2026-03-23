@@ -36,7 +36,7 @@ public class LoginTest extends BaseClass {
 		String accountText = account.myAccountGetText();
 
 		logger.info("Validation actual and expected result");
-		Assert.assertEquals(accountText, "y Account");
+		Assert.assertEquals(accountText, "My Account");
 		logger.info("TC001_validLogin()  Passed");
 	}
 

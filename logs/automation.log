@@ -371,3 +371,146 @@
 2026-03-23 17:47:36 INFO  com.tutorialsninja.base.BaseClass - Application Launched: https://tutorialsninja.com/demo/
 2026-03-23 17:47:36 INFO  com.tutorialsninja.base.BaseClass - TC003_registerWithExistingEmail() Started
 2026-03-23 17:47:40 INFO  com.tutorialsninja.base.BaseClass - browser Closed
+2026-03-23 18:21:15 INFO  com.tutorialsninja.base.BaseClass - Launching browser
+2026-03-23 18:21:15 INFO  com.tutorialsninja.base.BaseClass - Browser selected: chrome
+2026-03-23 18:21:18 INFO  com.tutorialsninja.base.BaseClass - Chrome Browser Launched
+2026-03-23 18:21:20 INFO  com.tutorialsninja.base.BaseClass - Application Launched: https://tutorialsninja.com/demo/
+2026-03-23 18:21:25 INFO  com.tutorialsninja.base.BaseClass - browser Closed
+2026-03-23 18:21:25 INFO  com.tutorialsninja.base.BaseClass - Launching browser
+2026-03-23 18:21:25 INFO  com.tutorialsninja.base.BaseClass - Browser selected: chrome
+2026-03-23 18:21:27 INFO  com.tutorialsninja.base.BaseClass - Chrome Browser Launched
+2026-03-23 18:21:28 INFO  com.tutorialsninja.base.BaseClass - Application Launched: https://tutorialsninja.com/demo/
+2026-03-23 18:21:34 INFO  com.tutorialsninja.base.BaseClass - browser Closed
+2026-03-23 18:21:34 INFO  com.tutorialsninja.base.BaseClass - Launching browser
+2026-03-23 18:21:34 INFO  com.tutorialsninja.base.BaseClass - Browser selected: chrome
+2026-03-23 18:21:36 INFO  com.tutorialsninja.base.BaseClass - Chrome Browser Launched
+2026-03-23 18:21:37 INFO  com.tutorialsninja.base.BaseClass - Application Launched: https://tutorialsninja.com/demo/
+2026-03-23 18:21:37 INFO  com.tutorialsninja.base.BaseClass - TC001_validLogin()  started
+2026-03-23 18:21:37 INFO  com.tutorialsninja.base.BaseClass - Clicked on My Account drop-down and clicked on login option
+2026-03-23 18:21:38 INFO  com.tutorialsninja.base.BaseClass - User name and Password entered and clicked on login button
+2026-03-23 18:21:41 INFO  com.tutorialsninja.base.BaseClass - Validation actual and expected result
+2026-03-23 18:21:41 INFO  com.tutorialsninja.base.BaseClass - browser Closed
+2026-03-23 18:21:41 INFO  com.tutorialsninja.base.BaseClass - Launching browser
+2026-03-23 18:21:41 INFO  com.tutorialsninja.base.BaseClass - Browser selected: chrome
+2026-03-23 18:21:43 INFO  com.tutorialsninja.base.BaseClass - Chrome Browser Launched
+2026-03-23 18:21:44 INFO  com.tutorialsninja.base.BaseClass - Application Launched: https://tutorialsninja.com/demo/
+2026-03-23 18:21:44 INFO  com.tutorialsninja.base.BaseClass - TC002_loginWithValidUserAndInvalidPassword() Started
+2026-03-23 18:21:44 INFO  com.tutorialsninja.base.BaseClass - Navigate to login page
+2026-03-23 18:21:45 INFO  com.tutorialsninja.base.BaseClass - Entered valid email and in valid password, clicked on login button
+2026-03-23 18:21:46 INFO  com.tutorialsninja.base.BaseClass - comparing result
+2026-03-23 18:21:46 INFO  com.tutorialsninja.base.BaseClass - TC002_loginWithValidUserAndInvalidPassword() Passed
+2026-03-23 18:21:47 INFO  com.tutorialsninja.base.BaseClass - browser Closed
+2026-03-23 18:21:47 INFO  com.tutorialsninja.base.BaseClass - Launching browser
+2026-03-23 18:21:47 INFO  com.tutorialsninja.base.BaseClass - Browser selected: chrome
+2026-03-23 18:21:48 INFO  com.tutorialsninja.base.BaseClass - Chrome Browser Launched
+2026-03-23 18:21:49 INFO  com.tutorialsninja.base.BaseClass - Application Launched: https://tutorialsninja.com/demo/
+2026-03-23 18:21:49 INFO  com.tutorialsninja.base.BaseClass - TC003_loginWithInvalidUserAndValidPassword() Started
+2026-03-23 18:21:52 INFO  com.tutorialsninja.base.BaseClass - browser Closed
+2026-03-23 18:21:52 INFO  com.tutorialsninja.base.BaseClass - Launching browser
+2026-03-23 18:21:52 INFO  com.tutorialsninja.base.BaseClass - Browser selected: chrome
+2026-03-23 18:21:54 INFO  com.tutorialsninja.base.BaseClass - Chrome Browser Launched
+2026-03-23 18:21:55 INFO  com.tutorialsninja.base.BaseClass - Application Launched: https://tutorialsninja.com/demo/
+2026-03-23 18:21:55 INFO  com.tutorialsninja.base.BaseClass - TC004_loginWithInvalidUserAndPassword()  Started
+2026-03-23 18:21:57 INFO  com.tutorialsninja.base.BaseClass - browser Closed
+2026-03-23 18:21:57 INFO  com.tutorialsninja.base.BaseClass - Launching browser
+2026-03-23 18:21:57 INFO  com.tutorialsninja.base.BaseClass - Browser selected: chrome
+2026-03-23 18:21:59 INFO  com.tutorialsninja.base.BaseClass - Chrome Browser Launched
+2026-03-23 18:22:00 INFO  com.tutorialsninja.base.BaseClass - Application Launched: https://tutorialsninja.com/demo/
+2026-03-23 18:22:00 INFO  com.tutorialsninja.base.BaseClass - TC005_verifyLoginPageTitle()  Started
+2026-03-23 18:22:03 INFO  com.tutorialsninja.base.BaseClass - browser Closed
+2026-03-23 18:22:03 INFO  com.tutorialsninja.base.BaseClass - Launching browser
+2026-03-23 18:22:03 INFO  com.tutorialsninja.base.BaseClass - Browser selected: chrome
+2026-03-23 18:22:04 INFO  com.tutorialsninja.base.BaseClass - Chrome Browser Launched
+2026-03-23 18:22:05 INFO  com.tutorialsninja.base.BaseClass - Application Launched: https://tutorialsninja.com/demo/
+2026-03-23 18:22:05 INFO  com.tutorialsninja.base.BaseClass - TC006_verifyLoginPageUrl() Started
+2026-03-23 18:22:08 INFO  com.tutorialsninja.base.BaseClass - browser Closed
+2026-03-23 18:22:08 INFO  com.tutorialsninja.base.BaseClass - Launching browser
+2026-03-23 18:22:08 INFO  com.tutorialsninja.base.BaseClass - Browser selected: chrome
+2026-03-23 18:22:10 INFO  com.tutorialsninja.base.BaseClass - Chrome Browser Launched
+2026-03-23 18:22:11 INFO  com.tutorialsninja.base.BaseClass - Application Launched: https://tutorialsninja.com/demo/
+2026-03-23 18:22:11 INFO  com.tutorialsninja.base.BaseClass - TC001_registerNewAccount() Started
+2026-03-23 18:22:15 INFO  com.tutorialsninja.base.BaseClass - browser Closed
+2026-03-23 18:22:15 INFO  com.tutorialsninja.base.BaseClass - Launching browser
+2026-03-23 18:22:15 INFO  com.tutorialsninja.base.BaseClass - Browser selected: chrome
+2026-03-23 18:22:16 INFO  com.tutorialsninja.base.BaseClass - Chrome Browser Launched
+2026-03-23 18:22:18 INFO  com.tutorialsninja.base.BaseClass - Application Launched: https://tutorialsninja.com/demo/
+2026-03-23 18:22:18 INFO  com.tutorialsninja.base.BaseClass - TC002_registerWithoutEmail() Started
+2026-03-23 18:22:22 INFO  com.tutorialsninja.base.BaseClass - browser Closed
+2026-03-23 18:22:22 INFO  com.tutorialsninja.base.BaseClass - Launching browser
+2026-03-23 18:22:22 INFO  com.tutorialsninja.base.BaseClass - Browser selected: chrome
+2026-03-23 18:22:24 INFO  com.tutorialsninja.base.BaseClass - Chrome Browser Launched
+2026-03-23 18:22:25 INFO  com.tutorialsninja.base.BaseClass - Application Launched: https://tutorialsninja.com/demo/
+2026-03-23 18:22:25 INFO  com.tutorialsninja.base.BaseClass - TC003_registerWithExistingEmail() Started
+2026-03-23 18:22:28 INFO  com.tutorialsninja.base.BaseClass - browser Closed
+2026-03-23 18:28:08 INFO  com.tutorialsninja.base.BaseClass - Launching browser
+2026-03-23 18:28:08 INFO  com.tutorialsninja.base.BaseClass - Browser selected: chrome
+2026-03-23 18:28:13 INFO  com.tutorialsninja.base.BaseClass - Chrome Browser Launched
+2026-03-23 18:28:14 INFO  com.tutorialsninja.base.BaseClass - Application Launched: https://tutorialsninja.com/demo/
+2026-03-23 18:28:20 INFO  com.tutorialsninja.base.BaseClass - browser Closed
+2026-03-23 18:28:20 INFO  com.tutorialsninja.base.BaseClass - Launching browser
+2026-03-23 18:28:20 INFO  com.tutorialsninja.base.BaseClass - Browser selected: chrome
+2026-03-23 18:28:21 INFO  com.tutorialsninja.base.BaseClass - Chrome Browser Launched
+2026-03-23 18:28:22 INFO  com.tutorialsninja.base.BaseClass - Application Launched: https://tutorialsninja.com/demo/
+2026-03-23 18:28:29 INFO  com.tutorialsninja.base.BaseClass - browser Closed
+2026-03-23 18:28:29 INFO  com.tutorialsninja.base.BaseClass - Launching browser
+2026-03-23 18:28:29 INFO  com.tutorialsninja.base.BaseClass - Browser selected: chrome
+2026-03-23 18:28:31 INFO  com.tutorialsninja.base.BaseClass - Chrome Browser Launched
+2026-03-23 18:28:32 INFO  com.tutorialsninja.base.BaseClass - Application Launched: https://tutorialsninja.com/demo/
+2026-03-23 18:28:32 INFO  com.tutorialsninja.base.BaseClass - TC001_validLogin()  started
+2026-03-23 18:28:32 INFO  com.tutorialsninja.base.BaseClass - Clicked on My Account drop-down and clicked on login option
+2026-03-23 18:28:33 INFO  com.tutorialsninja.base.BaseClass - User name and Password entered and clicked on login button
+2026-03-23 18:28:35 INFO  com.tutorialsninja.base.BaseClass - Validation actual and expected result
+2026-03-23 18:28:35 INFO  com.tutorialsninja.base.BaseClass - TC001_validLogin()  Passed
+2026-03-23 18:28:35 INFO  com.tutorialsninja.base.BaseClass - browser Closed
+2026-03-23 18:28:35 INFO  com.tutorialsninja.base.BaseClass - Launching browser
+2026-03-23 18:28:35 INFO  com.tutorialsninja.base.BaseClass - Browser selected: chrome
+2026-03-23 18:28:36 INFO  com.tutorialsninja.base.BaseClass - Chrome Browser Launched
+2026-03-23 18:28:37 INFO  com.tutorialsninja.base.BaseClass - Application Launched: https://tutorialsninja.com/demo/
+2026-03-23 18:28:37 INFO  com.tutorialsninja.base.BaseClass - TC002_loginWithValidUserAndInvalidPassword() Started
+2026-03-23 18:28:37 INFO  com.tutorialsninja.base.BaseClass - Navigate to login page
+2026-03-23 18:28:38 INFO  com.tutorialsninja.base.BaseClass - Entered valid email and in valid password, clicked on login button
+2026-03-23 18:28:40 INFO  com.tutorialsninja.base.BaseClass - comparing result
+2026-03-23 18:28:40 INFO  com.tutorialsninja.base.BaseClass - TC002_loginWithValidUserAndInvalidPassword() Passed
+2026-03-23 18:28:40 INFO  com.tutorialsninja.base.BaseClass - browser Closed
+2026-03-23 18:28:40 INFO  com.tutorialsninja.base.BaseClass - Launching browser
+2026-03-23 18:28:40 INFO  com.tutorialsninja.base.BaseClass - Browser selected: chrome
+2026-03-23 18:28:41 INFO  com.tutorialsninja.base.BaseClass - Chrome Browser Launched
+2026-03-23 18:28:42 INFO  com.tutorialsninja.base.BaseClass - Application Launched: https://tutorialsninja.com/demo/
+2026-03-23 18:28:42 INFO  com.tutorialsninja.base.BaseClass - TC003_loginWithInvalidUserAndValidPassword() Started
+2026-03-23 18:28:45 INFO  com.tutorialsninja.base.BaseClass - browser Closed
+2026-03-23 18:28:45 INFO  com.tutorialsninja.base.BaseClass - Launching browser
+2026-03-23 18:28:45 INFO  com.tutorialsninja.base.BaseClass - Browser selected: chrome
+2026-03-23 18:28:46 INFO  com.tutorialsninja.base.BaseClass - Chrome Browser Launched
+2026-03-23 18:28:47 INFO  com.tutorialsninja.base.BaseClass - Application Launched: https://tutorialsninja.com/demo/
+2026-03-23 18:28:47 INFO  com.tutorialsninja.base.BaseClass - TC004_loginWithInvalidUserAndPassword()  Started
+2026-03-23 18:28:50 INFO  com.tutorialsninja.base.BaseClass - browser Closed
+2026-03-23 18:28:50 INFO  com.tutorialsninja.base.BaseClass - Launching browser
+2026-03-23 18:28:50 INFO  com.tutorialsninja.base.BaseClass - Browser selected: chrome
+2026-03-23 18:28:51 INFO  com.tutorialsninja.base.BaseClass - Chrome Browser Launched
+2026-03-23 18:28:52 INFO  com.tutorialsninja.base.BaseClass - Application Launched: https://tutorialsninja.com/demo/
+2026-03-23 18:28:52 INFO  com.tutorialsninja.base.BaseClass - TC005_verifyLoginPageTitle()  Started
+2026-03-23 18:28:56 INFO  com.tutorialsninja.base.BaseClass - browser Closed
+2026-03-23 18:28:56 INFO  com.tutorialsninja.base.BaseClass - Launching browser
+2026-03-23 18:28:56 INFO  com.tutorialsninja.base.BaseClass - Browser selected: chrome
+2026-03-23 18:28:57 INFO  com.tutorialsninja.base.BaseClass - Chrome Browser Launched
+2026-03-23 18:28:58 INFO  com.tutorialsninja.base.BaseClass - Application Launched: https://tutorialsninja.com/demo/
+2026-03-23 18:28:58 INFO  com.tutorialsninja.base.BaseClass - TC006_verifyLoginPageUrl() Started
+2026-03-23 18:29:01 INFO  com.tutorialsninja.base.BaseClass - browser Closed
+2026-03-23 18:29:01 INFO  com.tutorialsninja.base.BaseClass - Launching browser
+2026-03-23 18:29:01 INFO  com.tutorialsninja.base.BaseClass - Browser selected: chrome
+2026-03-23 18:29:02 INFO  com.tutorialsninja.base.BaseClass - Chrome Browser Launched
+2026-03-23 18:29:04 INFO  com.tutorialsninja.base.BaseClass - Application Launched: https://tutorialsninja.com/demo/
+2026-03-23 18:29:04 INFO  com.tutorialsninja.base.BaseClass - TC001_registerNewAccount() Started
+2026-03-23 18:29:08 INFO  com.tutorialsninja.base.BaseClass - browser Closed
+2026-03-23 18:29:08 INFO  com.tutorialsninja.base.BaseClass - Launching browser
+2026-03-23 18:29:08 INFO  com.tutorialsninja.base.BaseClass - Browser selected: chrome
+2026-03-23 18:29:09 INFO  com.tutorialsninja.base.BaseClass - Chrome Browser Launched
+2026-03-23 18:29:10 INFO  com.tutorialsninja.base.BaseClass - Application Launched: https://tutorialsninja.com/demo/
+2026-03-23 18:29:10 INFO  com.tutorialsninja.base.BaseClass - TC002_registerWithoutEmail() Started
+2026-03-23 18:29:13 INFO  com.tutorialsninja.base.BaseClass - browser Closed
+2026-03-23 18:29:13 INFO  com.tutorialsninja.base.BaseClass - Launching browser
+2026-03-23 18:29:13 INFO  com.tutorialsninja.base.BaseClass - Browser selected: chrome
+2026-03-23 18:29:15 INFO  com.tutorialsninja.base.BaseClass - Chrome Browser Launched
+2026-03-23 18:29:16 INFO  com.tutorialsninja.base.BaseClass - Application Launched: https://tutorialsninja.com/demo/
+2026-03-23 18:29:16 INFO  com.tutorialsninja.base.BaseClass - TC003_registerWithExistingEmail() Started
+2026-03-23 18:29:19 INFO  com.tutorialsninja.base.BaseClass - browser Closed

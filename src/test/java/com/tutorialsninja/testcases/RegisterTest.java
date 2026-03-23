@@ -40,7 +40,7 @@ public class RegisterTest extends BaseClass {
 		register.agreeCheckbox();
 		register.continueButton();
 
-		Assert.assertEquals(register.emailMandatoryMsg(), "-Mail Address does not appear to be valid!");
+		Assert.assertEquals(register.emailMandatoryMsg(), "E-Mail Address does not appear to be valid!");
 	}
 
 	@Test(priority = 3)
