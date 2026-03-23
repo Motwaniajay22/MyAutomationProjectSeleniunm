@@ -1,7 +1,7 @@
 package com.tutorialsninja.testcases;
 
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
+
 import org.testng.annotations.Test;
 
 import com.tutorialsninja.base.BaseClass;

@@ -6,9 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.tutorialsninja.action.Action;
-import com.tutorialsninja.base.BaseClass;
 
-public class AccountPage extends BaseClass {
+
+public class AccountPage {
 	WebDriver driver;
 	Action action;
 
