@@ -24,15 +24,15 @@ import com.tutorialsninja.action.Action;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class BaseClass {
+public class BaseTest {
 
 	public static Properties prop;
 	public static WebDriver driver;
 	public static Action action;
 
-	public static Logger logger = LogManager.getLogger(BaseClass.class);
+	public static Logger logger = LogManager.getLogger(BaseTest.class);
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setUp() {
 		loadConfig();
 		launchBrowser();
@@ -65,7 +65,8 @@ public class BaseClass {
 			ChromeOptions options = new ChromeOptions();
 
 			// 🔥 Jenkins Safe Config
-			options.addArguments("--headless=new");   // 👉 comment this if you want UI
+			//options.addArguments("--disable-blink-features=AutomationControlled");
+			//options.addArguments("--headless=new");   // 👉 comment this if you want UI
 			options.addArguments("--window-size=1920,1080");
 			options.addArguments("--disable-gpu");
 			options.addArguments("--no-sandbox");
@@ -91,7 +92,7 @@ public class BaseClass {
 		logger.info("Application Launched: " + prop.getProperty("url"));
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
 		if (driver != null) {
 			driver.quit();
@@ -114,7 +115,7 @@ public class BaseClass {
 
 		return targetFilePath;
 	}
-}
+} 
 
 /*public class BaseClass {
 	public static Properties prop;
@@ -140,7 +141,16 @@ public class BaseClass {
 			e.printStackTrace();
 		}
 	}
-	import org.openqa.selenium.chrome.ChromeOptions;
+	
+	public void launchBrowser()
+	{
+		String browser = prop.getProperty("browser");
+		if(browser.equalsIgnoreCase("chrome"))
+		{
+			driver = new ChromeDriver();
+		}
+	}
+	
 
 	
 	@AfterMethod
@@ -164,4 +174,4 @@ public class BaseClass {
 		return targetFilePath;
 	}
 
-} */
+}*/

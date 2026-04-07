@@ -4,16 +4,16 @@ import org.testng.Assert;
 
 import org.testng.annotations.Test;
 
-import com.tutorialsninja.base.BaseClass;
+import com.tutorialsninja.base.BaseTest;
 import com.tutorialsninja.pageobjects.HomePage;
 import com.tutorialsninja.pageobjects.RegisterPage;
 import com.tutorialsninja.utility.RandomDataGenerator;
 
-public class RegisterTest extends BaseClass {
+public class RegisterTest extends BaseTest {
 	HomePage homepage;
 	RegisterPage register;
 
-	@Test(priority = 1)
+	@Test(priority = 1, groups= {"smoke", "regression"})
 	public void TC001_registerNewAccount() {
 		logger.info("TC001_registerNewAccount() Started");
 		homepage = new HomePage(driver);

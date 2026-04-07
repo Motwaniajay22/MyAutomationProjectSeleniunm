@@ -3,21 +3,23 @@ package com.tutorialsninja.testcases;
 import java.io.IOException;
 
 import org.testng.Assert;
-
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.tutorialsninja.base.BaseClass;
+import com.tutorialsninja.base.BaseTest;
+import com.tutorialsninja.dataprovider.DataProvideClass;
 import com.tutorialsninja.pageobjects.AccountPage;
 import com.tutorialsninja.pageobjects.HomePage;
 import com.tutorialsninja.pageobjects.LoginPage;
 import com.tutorialsninja.utility.ExcelUtil;
 
-public class LoginTest extends BaseClass {
+public class LoginTest extends BaseTest {
 	HomePage homepage;
 	LoginPage loginpage;
 	AccountPage account;
-
-	@Test(priority = 1)
+	
+	
+	@Test(dataProvider="logindata",priority = 1, groups={"smoke", "regression"})
 	public void TC001_validLogin() {
 
 		logger.info("TC001_validLogin()  started");
@@ -40,7 +42,7 @@ public class LoginTest extends BaseClass {
 		logger.info("TC001_validLogin()  Passed");
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2, groups={"smoke", "regression"})
 	public void TC002_loginWithValidUserAndInvalidPassword() {
 
 		logger.info("TC002_loginWithValidUserAndInvalidPassword() Started");
@@ -61,7 +63,7 @@ public class LoginTest extends BaseClass {
 
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3, groups={"regression"})
 	public void TC003_loginWithInvalidUserAndValidPassword() {
 		logger.info("TC003_loginWithInvalidUserAndValidPassword() Started");
 		homepage = new HomePage(driver);
@@ -155,4 +157,22 @@ public class LoginTest extends BaseClass {
 			driver.navigate().back();
 		}
 	}
+	
+	@Test(dataProvider = "loginData",dataProviderClass = DataProvideClass.class )
+	public void loginWithDataProvider(String email, String pwd)
+	{
+		homepage = new HomePage(driver);
+		homepage.navigateToLoginPage();
+		loginpage = new LoginPage(driver);
+		loginpage.enterEmail(email);
+		loginpage.enterPassword(pwd);
+		loginpage.clickLoginbtn();
+		
+		String actualText = loginpage.getErroLoginMsg();
+		Assert.assertTrue(
+				actualText.contains("Warning: No match for E-Mail Address and/or Password.") || actualText.contains(
+						"Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour."));
+		logger.info("TC002_loginWithValidUserAndInvalidPassword() Passed");
+	}
+
 }

@@ -1,65 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="7" total="8" passed="0" failed="1" skipped="0">
+<testng-results ignored="8" total="10" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-23T13:50:27 IST" name="Default suite" finished-at="2026-03-23T13:50:36 IST" duration-ms="8874">
+  <suite started-at="2026-04-07T14:06:59 IST" name="Default suite" finished-at="2026-04-07T14:07:12 IST" duration-ms="13286">
     <groups>
     </groups>
-    <test started-at="2026-03-23T13:50:27 IST" name="Default test" finished-at="2026-03-23T13:50:36 IST" duration-ms="8874">
+    <test started-at="2026-04-07T14:06:59 IST" name="Default test" finished-at="2026-04-07T14:07:12 IST" duration-ms="13286">
       <class name="com.tutorialsninja.testcases.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@6b44435b]" started-at="2026-03-23T13:50:27 IST" name="setUp" finished-at="2026-03-23T13:50:32 IST" duration-ms="4842" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@2ccca26f]" started-at="2026-04-07T14:06:59 IST" name="setUp" finished-at="2026-04-07T14:07:03 IST" duration-ms="4484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC001_validLogin()[pri:1, instance:com.tutorialsninja.testcases.LoginTest@6b44435b]" started-at="2026-03-23T13:50:32 IST" name="TC001_validLogin" finished-at="2026-03-23T13:50:36 IST" duration-ms="3561" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [y Account] but found [My Account]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [y Account] but found [My Account]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at com.tutorialsninja.testcases.LoginTest.TC001_validLogin(LoginTest.java:39)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="loginWithDataProvider(java.lang.String,java.lang.String)[pri:0, instance:com.tutorialsninja.testcases.LoginTest@2ccca26f]" started-at="2026-04-07T14:07:03 IST" name="loginWithDataProvider" data-provider="loginData" finished-at="2026-04-07T14:07:06 IST" duration-ms="3109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aj@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC001_validLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@6b44435b]" started-at="2026-03-23T13:50:36 IST" name="tearDown" finished-at="2026-03-23T13:50:36 IST" duration-ms="390" status="PASS">
+        </test-method> <!-- loginWithDataProvider -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@2ccca26f]" started-at="2026-04-07T14:07:06 IST" name="tearDown" finished-at="2026-04-07T14:07:07 IST" duration-ms="306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@2ccca26f]" started-at="2026-04-07T14:07:07 IST" name="setUp" finished-at="2026-04-07T14:07:09 IST" duration-ms="2617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithDataProvider(java.lang.String,java.lang.String)[pri:0, instance:com.tutorialsninja.testcases.LoginTest@2ccca26f]" started-at="2026-04-07T14:07:09 IST" name="loginWithDataProvider" data-provider="loginData" finished-at="2026-04-07T14:07:12 IST" duration-ms="2347" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aaj@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12a34]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithDataProvider -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@2ccca26f]" started-at="2026-04-07T14:07:12 IST" name="tearDown" finished-at="2026-04-07T14:07:12 IST" duration-ms="319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

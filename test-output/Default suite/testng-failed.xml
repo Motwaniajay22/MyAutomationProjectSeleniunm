@@ -5,9 +5,9 @@
     <classes>
       <class name="com.tutorialsninja.testcases.LoginTest">
         <methods>
-          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="TC001_validLogin"/>
+          <include name="loginWithDataProvider"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.tutorialsninja.testcases.LoginTest -->
     </classes>

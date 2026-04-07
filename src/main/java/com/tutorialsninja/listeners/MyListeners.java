@@ -7,7 +7,7 @@ import org.testng.ITestResult;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.tutorialsninja.base.BaseClass;
+import com.tutorialsninja.base.BaseTest;
 import com.tutorialsninja.utility.ExtentReportManager;
 
 public class MyListeners implements ITestListener {
@@ -32,7 +32,7 @@ public class MyListeners implements ITestListener {
 		test.log(Status.INFO, result.getThrowable().getMessage());
 
 		try {
-			String imgPath =  BaseClass.captureScreenShot(result.getName());
+			String imgPath =  BaseTest.captureScreenShot(result.getName());
 			test.addScreenCaptureFromPath(imgPath);
 		} catch (Exception e) {
 			e.printStackTrace();

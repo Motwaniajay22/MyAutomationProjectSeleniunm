@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="grouptests">
+	<test name="functionals">
+
+		<groups>
+			<run>
+				<include name="smoke" />
+				<include name="regression" />
+				<include name="functional" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.tutorialsninja.testcases.LoginTest" />
+			<class name="com.tutorialsninja.testcases.RegisterTest" />
+			<class name="com.tutorialsninja.testcases.HomePageSearchBar" />
+		</classes>
+
+	</test>
+</suite>
