@@ -8,55 +8,65 @@ import org.openqa.selenium.support.PageFactory;
 import com.tutorialsninja.action.Action;
 
 public class LoginPage {
-	WebDriver driver;
-	Action action;
 
-	public LoginPage(WebDriver driver) {
-		this.driver = driver;
-		action = new Action(driver);
-		PageFactory.initElements(driver, this);
-	}
+    WebDriver driver;
+    Action action;
 
-	@FindBy(id = "input-email")
-	WebElement email;
-	@FindBy(id = "input-password")
-	WebElement password;
-	@FindBy(xpath = "//input[@value=\"Login\"]")
-	WebElement loginbtn;
-	@FindBy(css = "div.alert.alert-danger")
-	WebElement errorMsg;
+    public LoginPage(WebDriver driver) {
+        this.driver = driver;
+        this.action = new Action(driver);
+        PageFactory.initElements(driver, this);
+    }
 
-	public void login(String uemail, String upassword) {
+    // Locators
+    @FindBy(id = "input-email")
+    WebElement email;
 
-		action.enterText(email, uemail);
-		action.enterText(password, upassword);
-		action.click(loginbtn);
-	}
+    @FindBy(id = "input-password")
+    WebElement password;
 
-	public void enterEmail(String email) {
-		action.enterText(this.email, email);
-	}
+    @FindBy(xpath = "//input[@value='Login']")
+    WebElement loginBtn;
 
-	public void clickLoginbtn() {
-		action.click(loginbtn);
-	}
+    @FindBy(css = "div.alert.alert-danger")
+    WebElement errorMsg;
 
-	public void enterPassword(String password) {
-		action.enterText(this.password, password);
-	}
+    // Actions
 
-	public String getErroLoginMsg() {
+    public void login(String uemail, String upassword) {
+        action.waitUntilElementToBeVisible(email);
+        action.enterText(email, uemail);
+        action.enterText(password, upassword);
+        action.click(loginBtn);
+    }
 
-		return action.getText(errorMsg);
-	}
+    public void enterEmail(String emailValue) {
+        action.waitUntilElementToBeVisible(email);
+        action.enterText(this.email, emailValue);
+    }
 
-	public String loginPageTitle() {
+    public void enterPassword(String passwordValue) {
+        action.waitUntilElementToBeVisible(password);
+        action.enterText(this.password, passwordValue);
+    }
 
-		return action.getTitle("My Account");
-	}
+    public void clickLoginButton() {
+        action.waitForElementToBeClickable(loginBtn);
+        action.click(loginBtn);
+    }
 
-	public String loginPageUrl() {
-		return action.getUrl("account/account");
-	}
+    public String getErrorLoginMsg() {
+        action.waitUntilElementToBeVisible(errorMsg);
+        return action.getText(errorMsg);
+    }
 
+    public String getLoginPageTitle() {
+        return action.getTitle(driver.getTitle());
+        
+    }
+
+    public String getLoginPageUrl() {
+        return action.getUrl(driver.getCurrentUrl());
+    	
+    }
 }

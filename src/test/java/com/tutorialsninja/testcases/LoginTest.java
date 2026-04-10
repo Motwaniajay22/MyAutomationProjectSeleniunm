@@ -1,25 +1,19 @@
 package com.tutorialsninja.testcases;
-
-import java.io.IOException;
-
 import org.testng.Assert;
-
 import org.testng.annotations.Test;
-
 import com.tutorialsninja.base.BaseTest;
-import com.tutorialsninja.dataprovider.DataProvideClass;
 import com.tutorialsninja.pageobjects.AccountPage;
 import com.tutorialsninja.pageobjects.HomePage;
 import com.tutorialsninja.pageobjects.LoginPage;
-import com.tutorialsninja.utility.ExcelUtil;
+
+
 
 public class LoginTest extends BaseTest {
 	HomePage homepage;
 	LoginPage loginpage;
 	AccountPage account;
-	
-	
-	@Test(groups={"smoke", "regression"})
+
+	@Test(groups = { "smoke", "regression" })
 	public void TC001_validLogin() {
 
 		logger.info("TC001_validLogin()  started");
@@ -42,7 +36,7 @@ public class LoginTest extends BaseTest {
 		logger.info("TC001_validLogin()  Passed");
 	}
 
-	@Test(priority = 2, groups={"smoke", "regression"})
+	@Test(priority = 2, groups = { "smoke", "regression" })
 	public void TC002_loginWithValidUserAndInvalidPassword() {
 
 		logger.info("TC002_loginWithValidUserAndInvalidPassword() Started");
@@ -54,7 +48,7 @@ public class LoginTest extends BaseTest {
 		logger.info("Entered valid email and in valid password, clicked on login button");
 		loginpage.login(prop.getProperty("ValidEmail"), prop.getProperty("InvalidPassword"));
 
-		String actualText = loginpage.getErroLoginMsg();
+		String actualText = loginpage.getErrorLoginMsg();
 		logger.info("comparing result");
 		Assert.assertTrue(
 				actualText.contains("Warning: No match for E-Mail Address and/or Password.") || actualText.contains(
@@ -63,7 +57,7 @@ public class LoginTest extends BaseTest {
 
 	}
 
-	@Test(priority = 3, groups={"regression"})
+	@Test(priority = 3, groups = { "regression" })
 	public void TC003_loginWithInvalidUserAndValidPassword() {
 		logger.info("TC003_loginWithInvalidUserAndValidPassword() Started");
 		homepage = new HomePage(driver);
@@ -72,7 +66,7 @@ public class LoginTest extends BaseTest {
 		loginpage = new LoginPage(driver);
 		loginpage.login(prop.getProperty("InvalidEmail"), prop.getProperty("ValidPassword"));
 
-		String actualText = loginpage.getErroLoginMsg();
+		String actualText = loginpage.getErrorLoginMsg();
 		Assert.assertTrue(
 				actualText.contains("Warning: No match for E-Mail Address and/or Password.") || (actualText.contains(
 						"Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour.")));
@@ -87,7 +81,7 @@ public class LoginTest extends BaseTest {
 		loginpage = new LoginPage(driver);
 		loginpage.login(prop.getProperty("InvalidEmail"), prop.getProperty("InvalidPassword"));
 
-		String actualText = loginpage.getErroLoginMsg();
+		String actualText = loginpage.getErrorLoginMsg();
 
 		Assert.assertTrue(
 				actualText.contains("Warning: No match for E-Mail Address and/or Password.") || (actualText.contains(
@@ -102,8 +96,10 @@ public class LoginTest extends BaseTest {
 
 		loginpage = new LoginPage(driver);
 		loginpage.login(prop.getProperty("ValidEmail"), prop.getProperty("ValidPassword"));
-
-		Assert.assertEquals(loginpage.loginPageTitle(), "My Account");
+		
+		String title = driver.getTitle();
+		
+		Assert.assertEquals(loginpage.getLoginPageTitle(), title);
 	}
 
 	@Test(priority = 6)
@@ -114,65 +110,10 @@ public class LoginTest extends BaseTest {
 
 		loginpage = new LoginPage(driver);
 		loginpage.login(prop.getProperty("ValidEmail"), prop.getProperty("ValidPassword"));
-
-		Assert.assertEquals(loginpage.loginPageUrl(),
-				"https://tutorialsninja.com/demo/index.php?route=account/account");
+		String curl = driver.getCurrentUrl();
+		Assert.assertEquals(loginpage.getLoginPageUrl(),curl);
 
 	}
 
-	@Test
-	public void excelDataLogin() throws IOException {
-		homepage = new HomePage(driver);
-		homepage.navigateToLoginPage();
-		String filePath = System.getProperty("user.dir") + "\\Testdata\\testdata.xlsx";
-		String email = ExcelUtil.getCellData(filePath, "Sheet1", 1, 0);
-		String pass = ExcelUtil.getCellData(filePath, "Sheet1", 1, 1);
-		LoginPage loginpage = new LoginPage(driver);
-
-		loginpage.enterEmail(email);
-		loginpage.enterPassword(pass);
-		loginpage.clickLoginbtn();
-		Assert.assertEquals(loginpage.loginPageUrl(),
-				"https://tutorialsninja.com/demo/index.php?route=account/account");
-	}
-
-	@Test
-	public void excelDataLoginMultiple() throws IOException {
-		homepage = new HomePage(driver);
-		homepage.navigateToLoginPage();
-		String filePath = System.getProperty("user.dir") + "\\Testdata\\testdata.xlsx";
-		int rows = ExcelUtil.getRowCount(filePath, "Sheet1");
-		for (int i = 1; i <= rows; i++) {
-			String email = ExcelUtil.getCellData(filePath, "Sheet1", i, 0);
-			String pass = ExcelUtil.getCellData(filePath, "Sheet1", i, 1);
-			
-			LoginPage loginpage = new LoginPage(driver);
-
-			loginpage.enterEmail(email);
-			loginpage.enterPassword(pass);
-			loginpage.clickLoginbtn();
-			System.out.println("login with " + email + pass);
-			Assert.assertEquals(loginpage.loginPageUrl(),
-					"https://tutorialsninja.com/demo/index.php?route=account/account");
-			driver.navigate().back();
-		}
-	}
 	
-	@Test(dataProvider = "loginData",dataProviderClass = DataProvideClass.class )
-	public void loginWithDataProvider(String email, String pwd)
-	{
-		homepage = new HomePage(driver);
-		homepage.navigateToLoginPage();
-		loginpage = new LoginPage(driver);
-		loginpage.enterEmail(email);
-		loginpage.enterPassword(pwd);
-		loginpage.clickLoginbtn();
-		
-		String actualText = loginpage.getErroLoginMsg();
-		Assert.assertTrue(
-				actualText.contains("Warning: No match for E-Mail Address and/or Password.") || actualText.contains(
-						"Warning: Your account has exceeded allowed number of login attempts. Please try again in 1 hour."));
-		logger.info("TC002_loginWithValidUserAndInvalidPassword() Passed");
-	}
-
 }

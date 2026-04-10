@@ -10,7 +10,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ExtentReportManager {
 
-	private static ExtentReports extent;
+	public static ExtentReports extent;
 
 	// This is the ONLY method you call from Listener
 	public static ExtentReports getReportInstance() {

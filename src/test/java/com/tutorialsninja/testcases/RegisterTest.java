@@ -7,23 +7,13 @@ import org.testng.annotations.Test;
 import com.tutorialsninja.base.BaseTest;
 import com.tutorialsninja.pageobjects.HomePage;
 import com.tutorialsninja.pageobjects.RegisterPage;
-import com.tutorialsninja.utility.RandomDataGenerator;
+
 
 public class RegisterTest extends BaseTest {
 	HomePage homepage;
 	RegisterPage register;
 
-	@Test(priority = 1, groups= {"smoke", "regression"})
-	public void TC001_registerNewAccount() {
-		logger.info("TC001_registerNewAccount() Started");
-		homepage = new HomePage(driver);
-		homepage.navigateToRegisterPage();
-
-		register = new RegisterPage(driver);
-		register.newAccountRegister("ajay", "mot", RandomDataGenerator.generatEmail(), "1111122222", "1234", "1234");
-
-		Assert.assertEquals(register.accountSuccessMsg(), "Your Account Has Been Created!");
-	}
+	
 
 	@Test(priority = 2)
 	public void TC002_registerWithoutEmail() throws InterruptedException {

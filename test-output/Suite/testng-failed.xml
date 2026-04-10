@@ -6,26 +6,9 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.tutorialsninja.testcases.RegisterTest">
-        <methods>
-          <include name="TC002_registerWithoutEmail"/>
-          <include name="TC003_registerWithExistingEmail"/>
-          <include name="TC001_registerNewAccount"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.tutorialsninja.testcases.RegisterTest -->
       <class name="com.tutorialsninja.testcases.LoginTest">
         <methods>
-          <include name="TC006_verifyLoginPageUrl"/>
           <include name="setUp"/>
-          <include name="excelDataLogin"/>
-          <include name="TC002_loginWithValidUserAndInvalidPassword"/>
-          <include name="TC001_validLogin"/>
-          <include name="excelDataLoginMultiple"/>
-          <include name="TC004_loginWithInvalidUserAndPassword"/>
-          <include name="loginWithDataProvider"/>
-          <include name="TC003_loginWithInvalidUserAndValidPassword"/>
           <include name="TC005_verifyLoginPageTitle"/>
           <include name="tearDown"/>
         </methods>
