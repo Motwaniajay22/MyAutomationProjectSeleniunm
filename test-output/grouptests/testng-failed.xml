@@ -12,17 +12,13 @@
     <classes>
       <class name="com.tutorialsninja.testcases.RegisterTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
           <include name="TC001_registerNewAccount"/>
         </methods>
       </class> <!-- com.tutorialsninja.testcases.RegisterTest -->
       <class name="com.tutorialsninja.testcases.LoginTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="TC001_validLogin"/>
           <include name="TC002_loginWithValidUserAndInvalidPassword"/>
+          <include name="TC001_validLogin"/>
           <include name="TC003_loginWithInvalidUserAndValidPassword"/>
         </methods>
       </class> <!-- com.tutorialsninja.testcases.LoginTest -->

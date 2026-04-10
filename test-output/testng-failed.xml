@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="com.tutorialsninja.listeners.MyListeners"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [grouptests]">
+  <test thread-count="5" name="functionals(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <include name="regression"/>
+        <include name="functional"/>
+      </run>
+    </groups>
     <classes>
+      <class name="com.tutorialsninja.testcases.RegisterTest">
+        <methods>
+          <include name="TC001_registerNewAccount"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.testcases.RegisterTest -->
       <class name="com.tutorialsninja.testcases.LoginTest">
         <methods>
-          <include name="setUp"/>
+          <include name="TC002_loginWithValidUserAndInvalidPassword"/>
           <include name="TC001_validLogin"/>
-          <include name="tearDown"/>
+          <include name="TC003_loginWithInvalidUserAndValidPassword"/>
         </methods>
       </class> <!-- com.tutorialsninja.testcases.LoginTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- functionals(failed) -->
+</suite> <!-- Failed suite [grouptests] -->

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">13 methods, 1 failed,   12 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.tutorialsninja.testcases.LoginTest" class="method navigator-link" hash-for-method="TC001_validLogin">TC001_validLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">13 methods,   13 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,6 +104,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.tutorialsninja.testcases.RegisterTest" class="method navigator-link" hash-for-method="TC001_registerNewAccount">TC001_registerNewAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.tutorialsninja.testcases.LoginTest" class="method navigator-link" hash-for-method="TC001_validLogin">TC001_validLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -167,12 +158,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.tutorialsninja.testcases.LoginTest" class="method navigator-link" hash-for-method="loginWithDataProvider(aj@gmail.com, 1234)">loginWithDataProvider(aj@gmail.com, 1234)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.tutorialsninja.testcases.LoginTest" class="method navigator-link" hash-for-method="loginWithDataProvider(aaj@gmail.com, 12a34)">loginWithDataProvider(aaj@gmail.com, 12a34)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.tutorialsninja.testcases.LoginTest" class="method navigator-link" hash-for-method="loginWithDataProvider(aaj@gmail.com, 12a34)">loginWithDataProvider(aaj@gmail.com, 12a34)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.tutorialsninja.testcases.LoginTest" class="method navigator-link" hash-for-method="loginWithDataProvider(aj@gmail.com, 1234)">loginWithDataProvider(aj@gmail.com, 1234)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -187,26 +178,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.tutorialsninja.testcases.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC001_validLogin">
-                  </a> <!-- TC001_validLogin -->
-                  <span class="method-name">TC001_validLogin</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Method public void com.tutorialsninja.testcases.LoginTest.TC001_validLogin() requires a @DataProvider named : logindata
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 24 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -242,6 +213,13 @@ Method public void com.tutorialsninja.testcases.LoginTest.TC001_validLogin() req
               <span class="class-name">com.tutorialsninja.testcases.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC001_validLogin">
+                  </a> <!-- TC001_validLogin -->
+                  <span class="method-name">TC001_validLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="TC002_loginWithValidUserAndInvalidPassword">
@@ -293,18 +271,18 @@ Method public void com.tutorialsninja.testcases.LoginTest.TC001_validLogin() req
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginWithDataProvider(aj@gmail.com, 1234)">
-                  </a> <!-- loginWithDataProvider(aj@gmail.com, 1234) -->
-                  <span class="method-name">loginWithDataProvider</span>
-                  <span class="parameters">(aj@gmail.com,1234)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="loginWithDataProvider(aaj@gmail.com, 12a34)">
                   </a> <!-- loginWithDataProvider(aaj@gmail.com, 12a34) -->
                   <span class="method-name">loginWithDataProvider</span>
                   <span class="parameters">(aaj@gmail.com,12a34)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithDataProvider(aj@gmail.com, 1234)">
+                  </a> <!-- loginWithDataProvider(aj@gmail.com, 1234) -->
+                  <span class="method-name">loginWithDataProvider</span>
+                  <span class="parameters">(aj@gmail.com,1234)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -405,60 +383,60 @@ data.addRows(13);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'excelDataLoginMultiple')
 data.setCell(0, 2, 'com.tutorialsninja.testcases.LoginTest')
-data.setCell(0, 3, 5526);
+data.setCell(0, 3, 8874);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'excelDataLogin')
+data.setCell(1, 1, 'TC003_loginWithInvalidUserAndValidPassword')
 data.setCell(1, 2, 'com.tutorialsninja.testcases.LoginTest')
-data.setCell(1, 3, 3626);
+data.setCell(1, 3, 5886);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC001_registerNewAccount')
-data.setCell(2, 2, 'com.tutorialsninja.testcases.RegisterTest')
-data.setCell(2, 3, 3403);
+data.setCell(2, 1, 'excelDataLogin')
+data.setCell(2, 2, 'com.tutorialsninja.testcases.LoginTest')
+data.setCell(2, 3, 4457);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC003_registerWithExistingEmail')
+data.setCell(3, 1, 'TC001_registerNewAccount')
 data.setCell(3, 2, 'com.tutorialsninja.testcases.RegisterTest')
-data.setCell(3, 3, 3022);
+data.setCell(3, 3, 3745);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC002_registerWithoutEmail')
-data.setCell(4, 2, 'com.tutorialsninja.testcases.RegisterTest')
-data.setCell(4, 3, 3000);
+data.setCell(4, 1, 'TC002_loginWithValidUserAndInvalidPassword')
+data.setCell(4, 2, 'com.tutorialsninja.testcases.LoginTest')
+data.setCell(4, 3, 3267);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'TC002_loginWithValidUserAndInvalidPassword')
-data.setCell(5, 2, 'com.tutorialsninja.testcases.LoginTest')
-data.setCell(5, 3, 2193);
+data.setCell(5, 1, 'TC003_registerWithExistingEmail')
+data.setCell(5, 2, 'com.tutorialsninja.testcases.RegisterTest')
+data.setCell(5, 3, 3199);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'TC006_verifyLoginPageUrl')
-data.setCell(6, 2, 'com.tutorialsninja.testcases.LoginTest')
-data.setCell(6, 3, 2140);
+data.setCell(6, 1, 'TC002_registerWithoutEmail')
+data.setCell(6, 2, 'com.tutorialsninja.testcases.RegisterTest')
+data.setCell(6, 3, 3131);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'loginWithDataProvider')
+data.setCell(7, 1, 'TC006_verifyLoginPageUrl')
 data.setCell(7, 2, 'com.tutorialsninja.testcases.LoginTest')
-data.setCell(7, 3, 2074);
+data.setCell(7, 3, 2765);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'TC003_loginWithInvalidUserAndValidPassword')
+data.setCell(8, 1, 'TC001_validLogin')
 data.setCell(8, 2, 'com.tutorialsninja.testcases.LoginTest')
-data.setCell(8, 3, 2035);
+data.setCell(8, 3, 2674);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'loginWithDataProvider')
 data.setCell(9, 2, 'com.tutorialsninja.testcases.LoginTest')
-data.setCell(9, 3, 1990);
+data.setCell(9, 3, 2153);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'TC005_verifyLoginPageTitle')
+data.setCell(10, 1, 'loginWithDataProvider')
 data.setCell(10, 2, 'com.tutorialsninja.testcases.LoginTest')
-data.setCell(10, 3, 1944);
+data.setCell(10, 3, 2143);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'TC004_loginWithInvalidUserAndPassword')
 data.setCell(11, 2, 'com.tutorialsninja.testcases.LoginTest')
-data.setCell(11, 3, 1835);
+data.setCell(11, 3, 2122);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'TC001_validLogin')
+data.setCell(12, 1, 'TC005_verifyLoginPageTitle')
 data.setCell(12, 2, 'com.tutorialsninja.testcases.LoginTest')
-data.setCell(12, 3, 0);
+data.setCell(12, 3, 2106);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 32 seconds</span>
+              <span class="suite-total-time">Total running time: 46 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -490,147 +468,159 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">excelDataLogin</span>
-                <span class="method-start">4143 ms</span>
+                <span class="method-name">TC001_validLogin</span>
+                <span class="method-start">4221 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7783 ms</span>
+                <span class="method-start">6910 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">8120 ms</span>
+                <span class="method-start">7250 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">excelDataLogin</span>
+                <span class="method-start">9495 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">13959 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">14335 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">excelDataLoginMultiple</span>
-                <span class="method-start">10494 ms</span>
+                <span class="method-start">18731 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16025 ms</span>
+                <span class="method-start">27607 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">16340 ms</span>
+                <span class="method-start">27949 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithDataProvider(aj@gmail.com, 1234)</span>
-                <span class="method-start">18665 ms</span>
+                <span class="method-start">30818 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">20657 ms</span>
+                <span class="method-start">32963 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">20922 ms</span>
+                <span class="method-start">33273 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithDataProvider(aaj@gmail.com, 12a34)</span>
-                <span class="method-start">23122 ms</span>
+                <span class="method-start">35777 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25199 ms</span>
+                <span class="method-start">37935 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">25516 ms</span>
+                <span class="method-start">38257 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC002_loginWithValidUserAndInvalidPassword</span>
-                <span class="method-start">27886 ms</span>
+                <span class="method-start">40874 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">30083 ms</span>
+                <span class="method-start">44145 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">30382 ms</span>
+                <span class="method-start">44537 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC003_loginWithInvalidUserAndValidPassword</span>
-                <span class="method-start">32660 ms</span>
+                <span class="method-start">47203 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">34697 ms</span>
+                <span class="method-start">53090 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">34973 ms</span>
+                <span class="method-start">53419 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC004_loginWithInvalidUserAndPassword</span>
-                <span class="method-start">37101 ms</span>
+                <span class="method-start">55966 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">38949 ms</span>
+                <span class="method-start">58090 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">39219 ms</span>
+                <span class="method-start">58458 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC005_verifyLoginPageTitle</span>
-                <span class="method-start">41448 ms</span>
+                <span class="method-start">60699 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">43394 ms</span>
+                <span class="method-start">62818 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">43644 ms</span>
+                <span class="method-start">63144 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC006_verifyLoginPageUrl</span>
-                <span class="method-start">45933 ms</span>
+                <span class="method-start">65574 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">48075 ms</span>
+                <span class="method-start">68342 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.tutorialsninja.testcases.RegisterTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">48333 ms</span>
+                <span class="method-start">68763 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC001_registerNewAccount</span>
-                <span class="method-start">50625 ms</span>
+                <span class="method-start">71065 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">54029 ms</span>
+                <span class="method-start">74812 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">54297 ms</span>
+                <span class="method-start">75150 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC002_registerWithoutEmail</span>
-                <span class="method-start">57580 ms</span>
+                <span class="method-start">77532 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">60581 ms</span>
+                <span class="method-start">80664 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">60906 ms</span>
+                <span class="method-start">80952 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC003_registerWithExistingEmail</span>
-                <span class="method-start">63035 ms</span>
+                <span class="method-start">83293 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">66058 ms</span>
+                <span class="method-start">86493 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
