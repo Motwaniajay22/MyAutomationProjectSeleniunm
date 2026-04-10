@@ -54,8 +54,12 @@ public class BaseTest {
 		String browser = prop.getProperty("browser");
 		if(browser.equalsIgnoreCase("chrome"))
 		{
-			WebDriverManager.chromedriver().setup();
-	        driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+	        options.addArguments("--start-maximized");
+	        options.addArguments("--disable-notifications");
+	        options.addArguments("--remote-allow-origins=*");
+
+	        driver = new ChromeDriver(options);
 		}
 		
 		driver.manage().window().maximize();
