@@ -44,7 +44,7 @@ public class BaseTest {
 			logger.info("Loading config file");
 
 			FileInputStream fis = new FileInputStream(
-					System.getProperty("user.dir") + "/src/main/resources/config.properties");
+					System.getProperty("user.dir") + "/src/test/resources/config.properties");
 
 			prop.load(fis);
 

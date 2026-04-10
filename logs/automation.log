@@ -1394,3 +1394,48 @@
 2026-04-10 13:06:19 INFO  com.tutorialsninja.base.BaseTest - Application Launched: https://tutorialsninja.com/demo/
 2026-04-10 13:06:19 INFO  com.tutorialsninja.base.BaseTest - TC003_registerWithExistingEmail() Started
 2026-04-10 13:06:22 INFO  com.tutorialsninja.base.BaseTest - Browser Closed
+2026-04-10 14:23:28 INFO  com.tutorialsninja.base.BaseTest - Loading config file
+2026-04-10 14:23:28 INFO  com.tutorialsninja.base.BaseTest - Browser selected: null
+2026-04-10 14:23:28 INFO  com.tutorialsninja.base.BaseTest - Loading config file
+2026-04-10 14:23:28 INFO  com.tutorialsninja.base.BaseTest - Browser selected: null
+2026-04-10 14:23:28 INFO  com.tutorialsninja.base.BaseTest - Loading config file
+2026-04-10 14:23:28 INFO  com.tutorialsninja.base.BaseTest - Browser selected: null
+2026-04-10 14:23:28 INFO  com.tutorialsninja.base.BaseTest - Loading config file
+2026-04-10 14:23:28 INFO  com.tutorialsninja.base.BaseTest - Browser selected: null
+2026-04-10 14:23:28 INFO  com.tutorialsninja.base.BaseTest - Loading config file
+2026-04-10 14:23:28 INFO  com.tutorialsninja.base.BaseTest - Browser selected: null
+2026-04-10 14:23:29 INFO  com.tutorialsninja.base.BaseTest - Loading config file
+2026-04-10 14:23:29 INFO  com.tutorialsninja.base.BaseTest - Browser selected: null
+2026-04-10 14:23:29 INFO  com.tutorialsninja.base.BaseTest - Loading config file
+2026-04-10 14:23:29 INFO  com.tutorialsninja.base.BaseTest - Browser selected: null
+2026-04-10 14:23:29 INFO  com.tutorialsninja.base.BaseTest - Loading config file
+2026-04-10 14:23:29 INFO  com.tutorialsninja.base.BaseTest - Browser selected: null
+2026-04-10 14:23:29 INFO  com.tutorialsninja.base.BaseTest - Loading config file
+2026-04-10 14:23:29 INFO  com.tutorialsninja.base.BaseTest - Browser selected: null
+2026-04-10 14:23:29 INFO  com.tutorialsninja.base.BaseTest - Loading config file
+2026-04-10 14:23:29 INFO  com.tutorialsninja.base.BaseTest - Browser selected: null
+2026-04-10 14:23:29 INFO  com.tutorialsninja.base.BaseTest - Loading config file
+2026-04-10 14:23:29 INFO  com.tutorialsninja.base.BaseTest - Browser selected: null
+2026-04-10 14:23:29 INFO  com.tutorialsninja.base.BaseTest - Loading config file
+2026-04-10 14:23:29 INFO  com.tutorialsninja.base.BaseTest - Browser selected: null
+2026-04-10 14:23:29 INFO  com.tutorialsninja.base.BaseTest - Loading config file
+2026-04-10 14:23:29 INFO  com.tutorialsninja.base.BaseTest - Browser selected: null
+2026-04-10 14:26:29 INFO  com.tutorialsninja.base.BaseTest - Loading config file
+2026-04-10 14:26:29 INFO  com.tutorialsninja.base.BaseTest - Browser selected: chrome
+2026-04-10 14:26:33 INFO  com.tutorialsninja.base.BaseTest - Chrome Browser Launched
+2026-04-10 14:26:35 INFO  com.tutorialsninja.base.BaseTest - Application Launched: https://tutorialsninja.com/demo/
+2026-04-10 14:26:35 INFO  com.tutorialsninja.base.BaseTest - TC001_validLogin()  started
+2026-04-10 14:26:35 INFO  com.tutorialsninja.base.BaseTest - Clicked on My Account drop-down and clicked on login option
+2026-04-10 14:26:35 INFO  com.tutorialsninja.base.BaseTest - User name and Password entered and clicked on login button
+2026-04-10 14:26:37 INFO  com.tutorialsninja.base.BaseTest - Validation actual and expected result
+2026-04-10 14:26:37 INFO  com.tutorialsninja.base.BaseTest - TC001_validLogin()  Passed
+2026-04-10 14:26:38 INFO  com.tutorialsninja.base.BaseTest - Browser Closed
+2026-04-10 14:26:38 INFO  com.tutorialsninja.base.BaseTest - Loading config file
+2026-04-10 14:26:38 INFO  com.tutorialsninja.base.BaseTest - Browser selected: chrome
+2026-04-10 14:26:39 INFO  com.tutorialsninja.base.BaseTest - Chrome Browser Launched
+2026-04-10 14:26:40 INFO  com.tutorialsninja.base.BaseTest - Application Launched: https://tutorialsninja.com/demo/
+2026-04-10 14:26:44 INFO  com.tutorialsninja.base.BaseTest - Browser Closed
+2026-04-10 14:26:44 INFO  com.tutorialsninja.base.BaseTest - Loading config file
+2026-04-10 14:26:44 INFO  com.tutorialsninja.base.BaseTest - Browser selected: chrome
+2026-04-10 14:26:46 INFO  com.tutorialsninja.base.BaseTest - Chrome Browser Launched
+2026-04-10 14:26:47 INFO  com.tutorialsninja.base.BaseTest - Application Launched: https://tutorialsninja.com/demo/
