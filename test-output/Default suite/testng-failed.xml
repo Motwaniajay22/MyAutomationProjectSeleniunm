@@ -5,6 +5,7 @@
     <classes>
       <class name="com.tutorialsninja.testcases.LoginTest">
         <methods>
+          <include name="TC006_verifyLoginPageUrl"/>
           <include name="setUp"/>
           <include name="TC005_verifyLoginPageTitle"/>
           <include name="tearDown"/>

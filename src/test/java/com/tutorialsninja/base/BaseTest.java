@@ -22,7 +22,7 @@ import org.testng.annotations.BeforeMethod;
 
 import com.tutorialsninja.action.Action;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class BaseTest {
 	public static Properties prop;
@@ -41,36 +41,32 @@ public class BaseTest {
 		try {
 			prop = new Properties();
 			logger.info("Launching browser");
-		FileInputStream fis = new FileInputStream(
-		System.getProperty("user.dir") + "/src/test/resources/config.properties");
+			FileInputStream fis = new FileInputStream(
+					System.getProperty("user.dir") + "/src/test/resources/config.properties");
 			prop.load(fis);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
-	public void launchBrowser()
-	{
-		String browser = prop.getProperty("browser");
-		if(browser.equalsIgnoreCase("chrome"))
-		{
-			ChromeOptions options = new ChromeOptions();
-	        options.addArguments("--start-maximized");
-	        options.addArguments("--disable-notifications");
-	        options.addArguments("--remote-allow-origins=*");
 
-	        driver = new ChromeDriver(options);
+	public void launchBrowser() {
+		String browser = prop.getProperty("browser");
+		if (browser.equalsIgnoreCase("chrome")) {
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--start-maximized");
+			options.addArguments("--disable-notifications");
+			options.addArguments("--remote-allow-origins=*");
+
+			driver = new ChromeDriver(options);
+		} else if (browser.equalsIgnoreCase("firefox")) {
+			driver = new FirefoxDriver();
+		} else {
+			throw new RuntimeException("Browser not supported: " + browser);
 		}
-		
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get(prop.getProperty("url"));
 	}
-	
-	
-	
 
-	
 	@AfterMethod
 	public void tearDown() {
 		if (driver != null) {
@@ -79,15 +75,14 @@ public class BaseTest {
 		}
 
 	}
-	
-	public static String captureScreenShot(String tname) throws IOException
-	{
+
+	public static String captureScreenShot(String tname) throws IOException {
 		String timeStamp = new SimpleDateFormat("yyyymmddhhmmss").format(new Date());
 		TakesScreenshot takeScreenShot = (TakesScreenshot) driver;
 		File sourceFile = takeScreenShot.getScreenshotAs(OutputType.FILE);
-		String targetFilePath = System.getProperty("user.dir")+"\\Screenshots\\"+tname+"_"+timeStamp+".png";
-		File targetFile= new File(targetFilePath);
-		//sourceFile.renameTo(targetFile);
+		String targetFilePath = System.getProperty("user.dir") + "\\Screenshots\\" + tname + "_" + timeStamp + ".png";
+		File targetFile = new File(targetFilePath);
+		// sourceFile.renameTo(targetFile);
 		FileHandler.copy(sourceFile, targetFile);
 		return targetFilePath;
 	}

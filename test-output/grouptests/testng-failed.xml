@@ -10,11 +10,6 @@
       </run>
     </groups>
     <classes>
-      <class name="com.tutorialsninja.testcases.RegisterTest">
-        <methods>
-          <include name="TC001_registerNewAccount"/>
-        </methods>
-      </class> <!-- com.tutorialsninja.testcases.RegisterTest -->
       <class name="com.tutorialsninja.testcases.LoginTest">
         <methods>
           <include name="TC002_loginWithValidUserAndInvalidPassword"/>

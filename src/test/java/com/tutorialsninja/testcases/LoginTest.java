@@ -89,7 +89,7 @@ public class LoginTest extends BaseTest {
 	}
 
 	@Test(priority = 5)
-	public void TC005_verifyLoginPageTitle() {
+	public void TC005_verifyLoginPageTitle() throws InterruptedException {
 		logger.info("TC005_verifyLoginPageTitle()  Started");
 		homepage = new HomePage(driver);
 		homepage.navigateToLoginPage();
@@ -98,7 +98,7 @@ public class LoginTest extends BaseTest {
 		loginpage.login(prop.getProperty("ValidEmail"), prop.getProperty("ValidPassword"));
 		
 		String title = driver.getTitle();
-		
+		Thread.sleep(3000);
 		Assert.assertEquals(loginpage.getLoginPageTitle(), title);
 	}
 
@@ -111,6 +111,7 @@ public class LoginTest extends BaseTest {
 		loginpage = new LoginPage(driver);
 		loginpage.login(prop.getProperty("ValidEmail"), prop.getProperty("ValidPassword"));
 		String curl = driver.getCurrentUrl();
+		
 		Assert.assertEquals(loginpage.getLoginPageUrl(),curl);
 
 	}
