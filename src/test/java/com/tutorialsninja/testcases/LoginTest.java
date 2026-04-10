@@ -3,7 +3,7 @@ package com.tutorialsninja.testcases;
 import java.io.IOException;
 
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
+
 import org.testng.annotations.Test;
 
 import com.tutorialsninja.base.BaseTest;
@@ -19,7 +19,7 @@ public class LoginTest extends BaseTest {
 	AccountPage account;
 	
 	
-	@Test(dataProvider="logindata",priority = 1, groups={"smoke", "regression"})
+	@Test(groups={"smoke", "regression"})
 	public void TC001_validLogin() {
 
 		logger.info("TC001_validLogin()  started");
