@@ -1,206 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
+<testng-results ignored="8" total="9" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-10T15:54:17 IST" name="Suite" finished-at="2026-04-10T15:55:44 IST" duration-ms="86869">
+  <suite started-at="2026-04-10T17:13:48 IST" name="Default suite" finished-at="2026-04-10T17:14:06 IST" duration-ms="18111">
     <groups>
-      <group name="regression">
-        <method signature="LoginTest.TC001_validLogin()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" name="TC001_validLogin" class="com.tutorialsninja.testcases.LoginTest"/>
-        <method signature="RegisterTest.TC001_registerNewAccount()[pri:1, instance:com.tutorialsninja.testcases.RegisterTest@51768776]" name="TC001_registerNewAccount" class="com.tutorialsninja.testcases.RegisterTest"/>
-        <method signature="LoginTest.TC002_loginWithValidUserAndInvalidPassword()[pri:2, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" name="TC002_loginWithValidUserAndInvalidPassword" class="com.tutorialsninja.testcases.LoginTest"/>
-        <method signature="LoginTest.TC003_loginWithInvalidUserAndValidPassword()[pri:3, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" name="TC003_loginWithInvalidUserAndValidPassword" class="com.tutorialsninja.testcases.LoginTest"/>
-      </group> <!-- regression -->
-      <group name="smoke">
-        <method signature="LoginTest.TC001_validLogin()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" name="TC001_validLogin" class="com.tutorialsninja.testcases.LoginTest"/>
-        <method signature="RegisterTest.TC001_registerNewAccount()[pri:1, instance:com.tutorialsninja.testcases.RegisterTest@51768776]" name="TC001_registerNewAccount" class="com.tutorialsninja.testcases.RegisterTest"/>
-        <method signature="LoginTest.TC002_loginWithValidUserAndInvalidPassword()[pri:2, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" name="TC002_loginWithValidUserAndInvalidPassword" class="com.tutorialsninja.testcases.LoginTest"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-04-10T15:54:17 IST" name="Test" finished-at="2026-04-10T15:55:44 IST" duration-ms="86869">
+    <test started-at="2026-04-10T17:13:48 IST" name="Default test" finished-at="2026-04-10T17:14:06 IST" duration-ms="18111">
       <class name="com.tutorialsninja.testcases.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:54:17 IST" name="setUp" finished-at="2026-04-10T15:54:21 IST" duration-ms="4219" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@6b44435b]" started-at="2026-04-10T17:13:48 IST" name="setUp" finished-at="2026-04-10T17:13:54 IST" duration-ms="5532" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC001_validLogin()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:54:21 IST" name="TC001_validLogin" finished-at="2026-04-10T15:54:24 IST" duration-ms="2674" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC001_validLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:54:24 IST" name="tearDown" finished-at="2026-04-10T15:54:24 IST" duration-ms="327" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:54:24 IST" name="setUp" finished-at="2026-04-10T15:54:27 IST" duration-ms="2245" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="excelDataLogin()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:54:27 IST" name="excelDataLogin" finished-at="2026-04-10T15:54:31 IST" duration-ms="4457" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- excelDataLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:54:31 IST" name="tearDown" finished-at="2026-04-10T15:54:32 IST" duration-ms="373" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:54:32 IST" name="setUp" finished-at="2026-04-10T15:54:36 IST" duration-ms="4396" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="excelDataLoginMultiple()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:54:36 IST" name="excelDataLoginMultiple" finished-at="2026-04-10T15:54:45 IST" duration-ms="8874" status="PASS">
+        <test-method signature="excelDataLoginMultiple()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@6b44435b]" started-at="2026-04-10T17:13:54 IST" name="excelDataLoginMultiple" finished-at="2026-04-10T17:14:04 IST" duration-ms="10423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- excelDataLoginMultiple -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:54:45 IST" name="tearDown" finished-at="2026-04-10T15:54:45 IST" duration-ms="332" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:54:45 IST" name="setUp" finished-at="2026-04-10T15:54:48 IST" duration-ms="2866" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginWithDataProvider(java.lang.String,java.lang.String)[pri:0, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:54:48 IST" name="loginWithDataProvider" data-provider="loginData" finished-at="2026-04-10T15:54:50 IST" duration-ms="2143" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[aj@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1234]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithDataProvider -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:54:50 IST" name="tearDown" finished-at="2026-04-10T15:54:51 IST" duration-ms="309" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:54:51 IST" name="setUp" finished-at="2026-04-10T15:54:53 IST" duration-ms="2504" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginWithDataProvider(java.lang.String,java.lang.String)[pri:0, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:54:53 IST" name="loginWithDataProvider" data-provider="loginData" finished-at="2026-04-10T15:54:55 IST" duration-ms="2153" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[aaj@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[12a34]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithDataProvider -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:54:55 IST" name="tearDown" finished-at="2026-04-10T15:54:56 IST" duration-ms="321" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:54:56 IST" name="setUp" finished-at="2026-04-10T15:54:58 IST" duration-ms="2617" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC002_loginWithValidUserAndInvalidPassword()[pri:2, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:54:58 IST" name="TC002_loginWithValidUserAndInvalidPassword" finished-at="2026-04-10T15:55:01 IST" duration-ms="3267" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC002_loginWithValidUserAndInvalidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:55:01 IST" name="tearDown" finished-at="2026-04-10T15:55:02 IST" duration-ms="390" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:55:02 IST" name="setUp" finished-at="2026-04-10T15:55:04 IST" duration-ms="2665" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC003_loginWithInvalidUserAndValidPassword()[pri:3, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:55:04 IST" name="TC003_loginWithInvalidUserAndValidPassword" finished-at="2026-04-10T15:55:10 IST" duration-ms="5886" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC003_loginWithInvalidUserAndValidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:55:10 IST" name="tearDown" finished-at="2026-04-10T15:55:11 IST" duration-ms="326" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:55:11 IST" name="setUp" finished-at="2026-04-10T15:55:13 IST" duration-ms="2547" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC004_loginWithInvalidUserAndPassword()[pri:4, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:55:13 IST" name="TC004_loginWithInvalidUserAndPassword" finished-at="2026-04-10T15:55:15 IST" duration-ms="2122" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC004_loginWithInvalidUserAndPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:55:15 IST" name="tearDown" finished-at="2026-04-10T15:55:16 IST" duration-ms="367" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:55:16 IST" name="setUp" finished-at="2026-04-10T15:55:18 IST" duration-ms="2241" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC005_verifyLoginPageTitle()[pri:5, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:55:18 IST" name="TC005_verifyLoginPageTitle" finished-at="2026-04-10T15:55:20 IST" duration-ms="2106" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC005_verifyLoginPageTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:55:20 IST" name="tearDown" finished-at="2026-04-10T15:55:20 IST" duration-ms="324" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:55:20 IST" name="setUp" finished-at="2026-04-10T15:55:23 IST" duration-ms="2430" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC006_verifyLoginPageUrl()[pri:6, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:55:23 IST" name="TC006_verifyLoginPageUrl" finished-at="2026-04-10T15:55:26 IST" duration-ms="2765" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC006_verifyLoginPageUrl -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@52350abb]" started-at="2026-04-10T15:55:26 IST" name="tearDown" finished-at="2026-04-10T15:55:26 IST" duration-ms="419" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.testcases.LoginTest@6b44435b]" started-at="2026-04-10T17:14:04 IST" name="tearDown" finished-at="2026-04-10T17:14:06 IST" duration-ms="2068" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tutorialsninja.testcases.LoginTest -->
-      <class name="com.tutorialsninja.testcases.RegisterTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialsninja.testcases.RegisterTest@51768776]" started-at="2026-04-10T15:55:26 IST" name="setUp" finished-at="2026-04-10T15:55:28 IST" duration-ms="2301" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC001_registerNewAccount()[pri:1, instance:com.tutorialsninja.testcases.RegisterTest@51768776]" started-at="2026-04-10T15:55:28 IST" name="TC001_registerNewAccount" finished-at="2026-04-10T15:55:32 IST" duration-ms="3745" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC001_registerNewAccount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.testcases.RegisterTest@51768776]" started-at="2026-04-10T15:55:32 IST" name="tearDown" finished-at="2026-04-10T15:55:32 IST" duration-ms="335" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialsninja.testcases.RegisterTest@51768776]" started-at="2026-04-10T15:55:32 IST" name="setUp" finished-at="2026-04-10T15:55:35 IST" duration-ms="2382" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC002_registerWithoutEmail()[pri:2, instance:com.tutorialsninja.testcases.RegisterTest@51768776]" started-at="2026-04-10T15:55:35 IST" name="TC002_registerWithoutEmail" finished-at="2026-04-10T15:55:38 IST" duration-ms="3131" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC002_registerWithoutEmail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.testcases.RegisterTest@51768776]" started-at="2026-04-10T15:55:38 IST" name="tearDown" finished-at="2026-04-10T15:55:38 IST" duration-ms="287" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialsninja.testcases.RegisterTest@51768776]" started-at="2026-04-10T15:55:38 IST" name="setUp" finished-at="2026-04-10T15:55:41 IST" duration-ms="2341" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC003_registerWithExistingEmail()[pri:3, instance:com.tutorialsninja.testcases.RegisterTest@51768776]" started-at="2026-04-10T15:55:41 IST" name="TC003_registerWithExistingEmail" finished-at="2026-04-10T15:55:44 IST" duration-ms="3199" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC003_registerWithExistingEmail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.testcases.RegisterTest@51768776]" started-at="2026-04-10T15:55:44 IST" name="tearDown" finished-at="2026-04-10T15:55:44 IST" duration-ms="285" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.tutorialsninja.testcases.RegisterTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

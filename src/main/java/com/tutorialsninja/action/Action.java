@@ -1,77 +1,65 @@
 package com.tutorialsninja.action;
 
 import java.time.Duration;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Action {
-	private WebDriver driver;
-	private WebDriverWait wait;
 
-	public Action(WebDriver driver) {
-		this.driver = driver;
-		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-	}
+    private WebDriver driver;
+    private WebDriverWait wait;
 
-	// Click WebElement
-	public void click(WebElement element) {
-		try {
-			wait.until(ExpectedConditions.elementToBeClickable(element));
-			element.click();
-		} catch (Exception e) {
-			System.out.println("Unable to click element: " + e.getMessage());
-		}
-	}
+    public Action(WebDriver driver) {
+        this.driver = driver;
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+    }
 
-	// Enter text
-	public void enterText(WebElement element, String value) {
-		try {
-			wait.until(ExpectedConditions.visibilityOf(element));
-			element.clear();
-			element.sendKeys(value);
-		} catch (Exception e) {
-			System.out.println("Unable to enter text: " + e.getMessage());
-		}
-	}
+    // CLICK
+    public void click(WebElement element) {
+        wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+    }
 
-	// To get text
-	public String getText(WebElement element) {
-		return wait.until(ExpectedConditions.visibilityOf(element)).getText();
-	}
+    // ENTER TEXT
+    public void enterText(WebElement element, String value) {
+        WebElement el = wait.until(ExpectedConditions.visibilityOf(element));
+        el.clear();
+        el.sendKeys(value);
+    }
 
-	// Wait until element clickable
-	public void waitForElementToBeClickable(WebElement element) {
-		try {
-			wait.until(ExpectedConditions.elementToBeClickable(element));
-		} catch (Exception e) {
-			System.out.println("Element is not clickable: " + e.getMessage());
-		}
-	}
+    // GET TEXT
+    public String getText(WebElement element) {
+        return wait.until(ExpectedConditions.visibilityOf(element)).getText();
+    }
 
-	// Wait until element visible
-	public void waitUntilElementToBeVisible(WebElement element) {
-		try {
-			wait.until(ExpectedConditions.visibilityOf(element));
-		} catch (Exception e) {
-			System.out.println("Element is not visile: " + e.getMessage());
-		}
-	}
+    // WAIT CLICKABLE
+    public void waitForElementToBeClickable(WebElement element) {
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
 
-	public boolean isDisplayed(WebElement element) {
-		return wait.until(ExpectedConditions.visibilityOf(element)).isDisplayed();
-	}
+    // WAIT VISIBLE
+    public void waitUntilElementToBeVisible(WebElement element) {
+        wait.until(ExpectedConditions.visibilityOf(element));
+    }
 
-	public String getTitle(String title) {
-		wait.until(ExpectedConditions.titleContains(title));
-		return driver.getTitle();
-	}
+    // IS DISPLAYED (SAFE)
+    public boolean isDisplayed(WebElement element) {
+        try {
+            return wait.until(ExpectedConditions.visibilityOf(element)).isDisplayed();
+        } catch (TimeoutException e) {
+            return false;
+        }
+    }
 
-	public String getUrl(String url) {
-		wait.until(ExpectedConditions.urlContains(url));
-		return driver.getCurrentUrl();
+    // TITLE
+    public String getTitle(String title) {
+        wait.until(ExpectedConditions.titleContains(title));
+        return driver.getTitle();
+    }
 
-	}
-
+    // URL
+    public String getUrl(String url) {
+        wait.until(ExpectedConditions.urlContains(url));
+        return driver.getCurrentUrl();
+    }
 }
