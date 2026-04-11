@@ -2329,3 +2329,25 @@
 2026-04-10 20:40:15 INFO  com.tutorialsninja.base.BaseTest - Launching browser
 2026-04-10 20:40:20 INFO  com.tutorialsninja.base.BaseTest - TC003_registerWithExistingEmail() Started
 2026-04-10 20:40:24 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-04-10 21:00:37 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-04-10 21:00:42 INFO  com.tutorialsninja.base.BaseTest - TC002_registerWithoutEmail() Started
+2026-04-10 21:00:54 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-04-10 21:00:54 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-04-10 21:00:56 INFO  com.tutorialsninja.base.BaseTest - TC003_registerWithExistingEmail() Started
+2026-04-10 21:01:07 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-04-10 21:30:52 INFO  com.tutorialsninja.base.BaseTest - TC001_validLogin()  started
+2026-04-10 21:30:52 INFO  com.tutorialsninja.base.BaseTest - Clicked on My Account drop-down and clicked on login option
+2026-04-10 21:30:52 INFO  com.tutorialsninja.base.BaseTest - TC002_loginWithValidUserAndInvalidPassword() Started
+2026-04-10 21:30:52 INFO  com.tutorialsninja.base.BaseTest - Navigate to login page
+2026-04-10 21:30:52 INFO  com.tutorialsninja.base.BaseTest - TC003_loginWithInvalidUserAndValidPassword() Started
+2026-04-10 21:31:35 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-04-10 21:32:32 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-04-10 21:33:10 INFO  com.tutorialsninja.base.BaseTest - TC001_validLogin()  started
+2026-04-10 21:33:10 INFO  com.tutorialsninja.base.BaseTest - Clicked on My Account drop-down and clicked on login option
+2026-04-10 21:33:30 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-04-11 12:17:30 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-04-11 12:17:36 INFO  com.tutorialsninja.base.BaseTest - TC002_registerWithoutEmail() Started
+2026-04-11 12:17:40 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-04-11 12:17:40 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-04-11 12:17:43 INFO  com.tutorialsninja.base.BaseTest - TC003_registerWithExistingEmail() Started
+2026-04-11 12:17:46 INFO  com.tutorialsninja.base.BaseTest - browser Closed

@@ -53,9 +53,18 @@ public class BaseTest {
 		String browser = prop.getProperty("browser");
 		if (browser.equalsIgnoreCase("chrome")) {
 			ChromeOptions options = new ChromeOptions();
+
 			options.addArguments("--start-maximized");
 			options.addArguments("--disable-notifications");
-			options.addArguments("--remote-allow-origins=*");
+
+			// 🔥 MUST for Jenkins
+			options.addArguments("--headless=new");
+			options.addArguments("--window-size=1920,1080");
+			options.addArguments("--disable-gpu");
+			options.addArguments("--no-sandbox");
+			options.addArguments("--disable-dev-shm-usage");
+
+			driver = new ChromeDriver(options);
 
 			driver = new ChromeDriver(options);
 		} else if (browser.equalsIgnoreCase("firefox")) {

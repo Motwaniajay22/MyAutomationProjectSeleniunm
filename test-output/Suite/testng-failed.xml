@@ -6,13 +6,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.tutorialsninja.testcases.LoginTest">
+      <class name="com.tutorialsninja.testcases.RegisterTest">
         <methods>
+          <include name="TC002_registerWithoutEmail"/>
+          <include name="TC003_registerWithExistingEmail"/>
           <include name="setUp"/>
-          <include name="TC005_verifyLoginPageTitle"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.tutorialsninja.testcases.LoginTest -->
+      </class> <!-- com.tutorialsninja.testcases.RegisterTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

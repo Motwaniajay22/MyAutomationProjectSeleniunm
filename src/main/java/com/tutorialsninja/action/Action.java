@@ -1,6 +1,7 @@
 package com.tutorialsninja.action;
 
 import java.time.Duration;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -12,54 +13,84 @@ public class Action {
 
     public Action(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20)); // Increased for Jenkins
     }
 
-    // CLICK
-    public void click(WebElement element) {
-        wait.until(ExpectedConditions.elementToBeClickable(element)).click();
-    }
+    //click
+    public void click(By locator) {
+        WebElement element = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(locator)
+        );
 
-    // ENTER TEXT
-    public void enterText(WebElement element, String value) {
-        WebElement el = wait.until(ExpectedConditions.visibilityOf(element));
-        el.clear();
-        el.sendKeys(value);
-    }
+        scrollToElement(element);
 
-    // GET TEXT
-    public String getText(WebElement element) {
-        return wait.until(ExpectedConditions.visibilityOf(element)).getText();
-    }
+        wait.until(ExpectedConditions.elementToBeClickable(locator));
 
-    // WAIT CLICKABLE
-    public void waitForElementToBeClickable(WebElement element) {
-        wait.until(ExpectedConditions.elementToBeClickable(element));
-    }
-
-    // WAIT VISIBLE
-    public void waitUntilElementToBeVisible(WebElement element) {
-        wait.until(ExpectedConditions.visibilityOf(element));
-    }
-
-    // IS DISPLAYED (SAFE)
-    public boolean isDisplayed(WebElement element) {
         try {
-            return wait.until(ExpectedConditions.visibilityOf(element)).isDisplayed();
+            element.click();
+        } catch (Exception e) {
+            // Fallback for Jenkins/headless issues
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+        }
+    }
+
+    // ✅ ENTER TEXT
+    public void enterText(By locator, String value) {
+        WebElement element = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(locator)
+        );
+        element.clear();
+        element.sendKeys(value);
+    }
+
+    // ✅ GET TEXT
+    public String getText(By locator) {
+        return wait.until(
+                ExpectedConditions.visibilityOfElementLocated(locator)
+        ).getText();
+    }
+
+    // ✅ WAIT FOR CLICKABLE
+    public WebElement waitForElementToBeClickable(By locator) {
+        return wait.until(ExpectedConditions.elementToBeClickable(locator));
+    }
+
+    // ✅ WAIT FOR VISIBILITY
+    public WebElement waitUntilElementToBeVisible(By locator) {
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    // ✅ IS DISPLAYED (SAFE)
+    public boolean isDisplayed(By locator) {
+        try {
+            return wait.until(
+                    ExpectedConditions.visibilityOfElementLocated(locator)
+            ).isDisplayed();
         } catch (TimeoutException e) {
             return false;
         }
     }
 
-    // TITLE
+    // ✅ GET TITLE
     public String getTitle(String title) {
         wait.until(ExpectedConditions.titleContains(title));
         return driver.getTitle();
     }
 
-    // URL
+    // ✅ GET URL
     public String getUrl(String url) {
         wait.until(ExpectedConditions.urlContains(url));
         return driver.getCurrentUrl();
+    }
+
+    // ✅ SCROLL TO ELEMENT
+    public void scrollToElement(WebElement element) {
+        try {
+            ((JavascriptExecutor) driver).executeScript(
+                    "arguments[0].scrollIntoView({block: 'center'});", element
+            );
+        } catch (Exception e) {
+            // Ignore if scroll fails
+        }
     }
 }

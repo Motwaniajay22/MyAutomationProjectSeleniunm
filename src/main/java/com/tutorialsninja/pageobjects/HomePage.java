@@ -1,9 +1,7 @@
 package com.tutorialsninja.pageobjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 import com.tutorialsninja.action.Action;
 
@@ -15,40 +13,34 @@ public class HomePage {
     public HomePage(WebDriver driver) {
         this.driver = driver;
         this.action = new Action(driver);
-        PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//input[@name='search']")
-    WebElement searchBar;
+    //  LOCATORS (By instead of WebElement)
+    private By searchBar = By.xpath("//input[@name='search']");
+    private By searchButton = By.xpath("//button[@class='btn btn-default btn-lg']");
+    private By myAccountDropDown = By.xpath("//*[@id='top-links']/ul/li[2]/a/span[1]");
+    private By loginOption = By.linkText("Login");
+    private By registerOption = By.linkText("Register");
 
-    @FindBy(xpath = "//button[@class='btn btn-default btn-lg']")
-    WebElement searchButton;
-
-    @FindBy(xpath = "//*[@id='top-links']/ul/li[2]/a/span[1]")
-    WebElement myAccountDropDown;
-
-    @FindBy(linkText = "Login")
-    WebElement loginOption;
-
-    @FindBy(linkText = "Register")
-    WebElement registerOption;
-
-    // safer navigation methods
+    //  ACTION METHODS
 
     public void openMyAccountDropdown() {
-        action.waitForElementToBeClickable(myAccountDropDown);
         action.click(myAccountDropDown);
     }
 
     public void navigateToLoginPage() {
         openMyAccountDropdown();
-        action.waitForElementToBeClickable(loginOption);
         action.click(loginOption);
     }
 
     public void navigateToRegisterPage() {
         openMyAccountDropdown();
-        action.waitForElementToBeClickable(registerOption);
         action.click(registerOption);
+    }
+
+    // OPTIONAL: SEARCH FEATURE
+    public void searchProduct(String product) {
+        action.enterText(searchBar, product);
+        action.click(searchButton);
     }
 }
