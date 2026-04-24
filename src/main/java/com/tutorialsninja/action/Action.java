@@ -15,24 +15,45 @@ public class Action {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(20)); // Increased for Jenkins
     }
-
-    //click
+    
     public void click(By locator) {
+
         WebElement element = wait.until(
-                ExpectedConditions.visibilityOfElementLocated(locator)
+                ExpectedConditions.elementToBeClickable(locator)
         );
 
         scrollToElement(element);
 
-        wait.until(ExpectedConditions.elementToBeClickable(locator));
+        // adjust for header
+        ((JavascriptExecutor) driver).executeScript("window.scrollBy(0, -100);");
 
-        try {
-            element.click();
-        } catch (Exception e) {
-            // Fallback for Jenkins/headless issues
-            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
-        }
+        // re-fetch after scroll
+        element = wait.until(
+                ExpectedConditions.refreshed(
+                        ExpectedConditions.elementToBeClickable(locator)
+                )
+        );
+
+        element.click();
     }
+
+//    //click
+//    public void click(By locator) {
+//        WebElement element = wait.until(
+//                ExpectedConditions.visibilityOfElementLocated(locator)
+//        );
+//
+//        scrollToElement(element);
+//
+//        wait.until(ExpectedConditions.elementToBeClickable(locator));
+//
+//        try {
+//            element.click();
+//        } catch (Exception e) {
+//            // Fallback for Jenkins/headless issues
+//            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+//        }
+//    }
 
     // ✅ ENTER TEXT
     public void enterText(By locator, String value) {

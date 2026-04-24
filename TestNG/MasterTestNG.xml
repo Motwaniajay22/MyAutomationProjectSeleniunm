@@ -10,6 +10,7 @@
 		<classes>
 			<class name="com.tutorialsninja.testcases.LoginTest" />
 			<class name="com.tutorialsninja.testcases.RegisterTest" />
+			<class name="com.tutorialsninja.testcases.AccountPageTest" />
 		</classes>
 
 	</test>

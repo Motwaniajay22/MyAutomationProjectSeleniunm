@@ -58,7 +58,7 @@ public class BaseTest {
 			options.addArguments("--disable-notifications");
 
 			// 🔥 MUST for Jenkins
-			options.addArguments("--headless=new");
+			//options.addArguments("--headless=new");
 			options.addArguments("--window-size=1920,1080");
 			options.addArguments("--disable-gpu");
 			options.addArguments("--no-sandbox");
@@ -66,7 +66,7 @@ public class BaseTest {
 
 			driver = new ChromeDriver(options);
 
-			driver = new ChromeDriver(options);
+			
 		} else if (browser.equalsIgnoreCase("firefox")) {
 			driver = new FirefoxDriver();
 		} else {
