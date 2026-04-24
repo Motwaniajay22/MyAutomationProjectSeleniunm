@@ -57,7 +57,7 @@ public class AccountPage {
 	
 	public void itemCartButton()
 	{
-		action.click(itemcart);
+		action.clickJs(itemcart);
 	}
 
 	public void bilingContinuebutton() {

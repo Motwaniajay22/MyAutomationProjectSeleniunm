@@ -16,7 +16,7 @@ public class Action {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(20)); // Increased for Jenkins
     }
     
-    public void click(By locator) {
+    public void clickJs(By locator) {
 
         WebElement element = wait.until(
                 ExpectedConditions.elementToBeClickable(locator)
@@ -37,23 +37,23 @@ public class Action {
         element.click();
     }
 
-//    //click
-//    public void click(By locator) {
-//        WebElement element = wait.until(
-//                ExpectedConditions.visibilityOfElementLocated(locator)
-//        );
-//
-//        scrollToElement(element);
-//
-//        wait.until(ExpectedConditions.elementToBeClickable(locator));
-//
-//        try {
-//            element.click();
-//        } catch (Exception e) {
-//            // Fallback for Jenkins/headless issues
-//            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
-//        }
-//    }
+   //click
+    public void click(By locator) {
+        WebElement element = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(locator)
+        );
+
+        scrollToElement(element);
+
+        wait.until(ExpectedConditions.elementToBeClickable(locator));
+
+        try {
+            element.click();
+        } catch (Exception e) {
+            // Fallback for Jenkins/headless issues
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+        }
+    }
 
     // ✅ ENTER TEXT
     public void enterText(By locator, String value) {
