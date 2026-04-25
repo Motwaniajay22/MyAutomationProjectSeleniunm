@@ -18,7 +18,7 @@ public class HomePage {
     //  LOCATORS (By instead of WebElement)
     private By searchBar = By.xpath("//input[@name='search']");
     private By searchButton = By.xpath("//button[@class='btn btn-default btn-lg']");
-    private By myAccountDropDown = By.xpath("//*[@id='top-links']/ul/li[2]/a/span[1]");
+    private By myAccountDropDown = By.xpath("//a[@title='My Account']");
     private By loginOption = By.linkText("Login");
     private By registerOption = By.linkText("Register");
 

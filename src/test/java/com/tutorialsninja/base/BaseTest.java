@@ -54,17 +54,15 @@ public class BaseTest {
 		if (browser.equalsIgnoreCase("chrome")) {
 			ChromeOptions options = new ChromeOptions();
 
-			options.addArguments("--start-maximized");
-			options.addArguments("--disable-notifications");
-
-			// 🔥 MUST for Jenkins
-			//options.addArguments("--headless=new");
+			// Jenkins stable config
+			options.addArguments("--headless=new");
 			options.addArguments("--window-size=1920,1080");
 			options.addArguments("--disable-gpu");
 			options.addArguments("--no-sandbox");
 			options.addArguments("--disable-dev-shm-usage");
+			options.addArguments("--disable-notifications");
 
-			driver = new ChromeDriver(options);
+			 driver = new ChromeDriver(options);
 
 			
 		} else if (browser.equalsIgnoreCase("firefox")) {
@@ -72,7 +70,7 @@ public class BaseTest {
 		} else {
 			throw new RuntimeException("Browser not supported: " + browser);
 		}
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		
 		driver.get(prop.getProperty("url"));
 	}
 
