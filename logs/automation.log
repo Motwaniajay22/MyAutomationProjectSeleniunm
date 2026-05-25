@@ -2932,3 +2932,114 @@
 2026-04-25 11:36:03 INFO  com.tutorialsninja.base.BaseTest - browser Closed
 2026-04-25 11:36:03 INFO  com.tutorialsninja.base.BaseTest - Launching browser
 2026-04-25 11:36:16 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-05-14 22:56:01 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-05-14 22:56:15 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-05-14 22:56:39 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-05-14 22:56:47 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-05-14 22:57:15 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-05-14 22:57:23 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-05-14 23:00:49 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-05-14 23:00:57 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-05-14 23:02:42 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-05-14 23:02:51 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-05-14 23:06:18 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-05-14 23:06:26 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-05-26 00:26:27 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-05-26 00:26:36 INFO  com.tutorialsninja.base.BaseTest - TC005_verifyLoginPageTitle()  Started
+2026-05-26 00:26:38 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-05-26 00:32:37 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-05-26 00:32:41 INFO  com.tutorialsninja.base.BaseTest - TC001_validLogin()  started
+2026-05-26 00:32:41 INFO  com.tutorialsninja.base.BaseTest - Clicked on My Account drop-down and clicked on login option
+2026-05-26 00:32:42 INFO  com.tutorialsninja.base.BaseTest - User name and Password entered and clicked on login button
+2026-05-26 00:32:43 INFO  com.tutorialsninja.base.BaseTest - Validation actual and expected result
+2026-05-26 00:32:44 INFO  com.tutorialsninja.base.BaseTest - TC001_validLogin()  Passed
+2026-05-26 00:32:44 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-05-26 00:32:44 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-05-26 00:32:46 INFO  com.tutorialsninja.base.BaseTest - TC002_loginWithValidUserAndInvalidPassword() Started
+2026-05-26 00:32:46 INFO  com.tutorialsninja.base.BaseTest - Navigate to login page
+2026-05-26 00:32:47 INFO  com.tutorialsninja.base.BaseTest - Entered valid email and in valid password, clicked on login button
+2026-05-26 00:32:49 INFO  com.tutorialsninja.base.BaseTest - comparing result
+2026-05-26 00:32:49 INFO  com.tutorialsninja.base.BaseTest - TC002_loginWithValidUserAndInvalidPassword() Passed
+2026-05-26 00:32:49 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-05-26 00:32:49 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-05-26 00:32:52 INFO  com.tutorialsninja.base.BaseTest - TC003_loginWithInvalidUserAndValidPassword() Started
+2026-05-26 00:32:54 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-05-26 00:32:54 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-05-26 00:32:57 INFO  com.tutorialsninja.base.BaseTest - TC004_loginWithInvalidUserAndPassword()  Started
+2026-05-26 00:32:59 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-05-26 00:32:59 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-05-26 00:33:01 INFO  com.tutorialsninja.base.BaseTest - TC005_verifyLoginPageTitle()  Started
+2026-05-26 00:33:04 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-05-26 00:33:04 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-05-26 00:33:07 INFO  com.tutorialsninja.base.BaseTest - TC006_verifyLoginPageUrl() Started
+2026-05-26 00:33:09 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-05-26 00:39:34 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-05-26 00:39:39 INFO  com.tutorialsninja.base.BaseTest - TC001_validLogin()  started
+2026-05-26 00:39:39 INFO  com.tutorialsninja.base.BaseTest - Clicked on My Account drop-down and clicked on login option
+2026-05-26 00:39:40 INFO  com.tutorialsninja.base.BaseTest - User name and Password entered and clicked on login button
+2026-05-26 00:39:42 INFO  com.tutorialsninja.base.BaseTest - Validation actual and expected result
+2026-05-26 00:39:42 INFO  com.tutorialsninja.base.BaseTest - TC001_validLogin()  Passed
+2026-05-26 00:39:42 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-05-26 00:39:42 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-05-26 00:39:45 INFO  com.tutorialsninja.base.BaseTest - TC002_loginWithValidUserAndInvalidPassword() Started
+2026-05-26 00:39:45 INFO  com.tutorialsninja.base.BaseTest - Navigate to login page
+2026-05-26 00:39:45 INFO  com.tutorialsninja.base.BaseTest - Entered valid email and in valid password, clicked on login button
+2026-05-26 00:39:48 INFO  com.tutorialsninja.base.BaseTest - comparing result
+2026-05-26 00:39:48 INFO  com.tutorialsninja.base.BaseTest - TC002_loginWithValidUserAndInvalidPassword() Passed
+2026-05-26 00:39:48 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-05-26 00:39:48 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-05-26 00:39:53 INFO  com.tutorialsninja.base.BaseTest - TC003_loginWithInvalidUserAndValidPassword() Started
+2026-05-26 00:39:55 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-05-26 00:39:55 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-05-26 00:39:57 INFO  com.tutorialsninja.base.BaseTest - TC004_loginWithInvalidUserAndPassword()  Started
+2026-05-26 00:40:00 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-05-26 00:40:00 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-05-26 00:40:03 INFO  com.tutorialsninja.base.BaseTest - TC005_verifyLoginPageTitle()  Started
+2026-05-26 00:40:03 INFO  com.tutorialsninja.base.BaseTest - navigate to loginpage
+2026-05-26 00:40:04 INFO  com.tutorialsninja.base.BaseTest - logged in to app
+2026-05-26 00:40:11 INFO  com.tutorialsninja.base.BaseTest - assertion
+2026-05-26 00:40:11 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-05-26 00:40:11 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-05-26 00:40:14 INFO  com.tutorialsninja.base.BaseTest - TC006_verifyLoginPageUrl() Started
+2026-05-26 00:40:14 INFO  com.tutorialsninja.base.BaseTest - navigate to loginpage
+2026-05-26 00:40:15 INFO  com.tutorialsninja.base.BaseTest - logged in to app
+2026-05-26 00:40:17 INFO  com.tutorialsninja.base.BaseTest - assertion
+2026-05-26 00:40:18 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-05-26 00:41:02 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-05-26 00:41:06 INFO  com.tutorialsninja.base.BaseTest - TC006_verifyLoginPageUrl() Started
+2026-05-26 00:41:06 INFO  com.tutorialsninja.base.BaseTest - navigate to loginpage
+2026-05-26 00:41:07 INFO  com.tutorialsninja.base.BaseTest - logged in to app
+2026-05-26 00:41:09 INFO  com.tutorialsninja.base.BaseTest - assertion
+2026-05-26 00:41:10 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-05-26 00:41:34 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-05-26 00:41:38 INFO  com.tutorialsninja.base.BaseTest - TC001_validLogin()  started
+2026-05-26 00:41:38 INFO  com.tutorialsninja.base.BaseTest - Clicked on My Account drop-down and clicked on login option
+2026-05-26 00:41:39 INFO  com.tutorialsninja.base.BaseTest - User name and Password entered and clicked on login button
+2026-05-26 00:41:40 INFO  com.tutorialsninja.base.BaseTest - Validation actual and expected result
+2026-05-26 00:41:40 INFO  com.tutorialsninja.base.BaseTest - TC001_validLogin()  Passed
+2026-05-26 00:41:41 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-05-26 00:41:41 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-05-26 00:41:44 INFO  com.tutorialsninja.base.BaseTest - TC002_loginWithValidUserAndInvalidPassword() Started
+2026-05-26 00:41:44 INFO  com.tutorialsninja.base.BaseTest - Navigate to login page
+2026-05-26 00:41:44 INFO  com.tutorialsninja.base.BaseTest - Entered valid email and in valid password, clicked on login button
+2026-05-26 00:41:46 INFO  com.tutorialsninja.base.BaseTest - comparing result
+2026-05-26 00:41:46 INFO  com.tutorialsninja.base.BaseTest - TC002_loginWithValidUserAndInvalidPassword() Passed
+2026-05-26 00:41:47 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-05-26 00:41:47 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-05-26 00:41:49 INFO  com.tutorialsninja.base.BaseTest - TC003_loginWithInvalidUserAndValidPassword() Started
+2026-05-26 00:41:52 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-05-26 00:41:52 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-05-26 00:41:54 INFO  com.tutorialsninja.base.BaseTest - TC004_loginWithInvalidUserAndPassword()  Started
+2026-05-26 00:41:57 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-05-26 00:41:57 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-05-26 00:41:59 INFO  com.tutorialsninja.base.BaseTest - TC005_verifyLoginPageTitle()  Started
+2026-05-26 00:41:59 INFO  com.tutorialsninja.base.BaseTest - navigate to loginpage
+2026-05-26 00:42:00 INFO  com.tutorialsninja.base.BaseTest - logged in to app
+2026-05-26 00:42:02 INFO  com.tutorialsninja.base.BaseTest - assertion
+2026-05-26 00:42:03 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-05-26 00:42:03 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-05-26 00:42:05 INFO  com.tutorialsninja.base.BaseTest - TC006_verifyLoginPageUrl() Started
+2026-05-26 00:42:05 INFO  com.tutorialsninja.base.BaseTest - navigate to loginpage
+2026-05-26 00:42:06 INFO  com.tutorialsninja.base.BaseTest - logged in to app
+2026-05-26 00:42:07 INFO  com.tutorialsninja.base.BaseTest - assertion
+2026-05-26 00:42:08 INFO  com.tutorialsninja.base.BaseTest - browser Closed

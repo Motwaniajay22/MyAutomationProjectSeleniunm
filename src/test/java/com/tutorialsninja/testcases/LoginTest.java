@@ -6,8 +6,6 @@ import com.tutorialsninja.pageobjects.AccountPage;
 import com.tutorialsninja.pageobjects.HomePage;
 import com.tutorialsninja.pageobjects.LoginPage;
 
-
-
 public class LoginTest extends BaseTest {
 	HomePage homepage;
 	LoginPage loginpage;
@@ -89,16 +87,18 @@ public class LoginTest extends BaseTest {
 	}
 
 	@Test(priority = 5)
-	public void TC005_verifyLoginPageTitle() throws InterruptedException {
+	public void TC005_verifyLoginPageTitle()  {
 		logger.info("TC005_verifyLoginPageTitle()  Started");
 		homepage = new HomePage(driver);
+		logger.info("navigate to loginpage");
 		homepage.navigateToLoginPage();
 
 		loginpage = new LoginPage(driver);
+		logger.info("logged in to app");
 		loginpage.login(prop.getProperty("ValidEmail"), prop.getProperty("ValidPassword"));
 		
 		String title = driver.getTitle();
-		Thread.sleep(3000);
+		logger.info("assertion");
 		Assert.assertEquals(loginpage.getLoginPageTitle(), title);
 	}
 
@@ -106,12 +106,15 @@ public class LoginTest extends BaseTest {
 	public void TC006_verifyLoginPageUrl() {
 		logger.info("TC006_verifyLoginPageUrl() Started");
 		homepage = new HomePage(driver);
+		logger.info("navigate to loginpage");
 		homepage.navigateToLoginPage();
 
 		loginpage = new LoginPage(driver);
+		logger.info("logged in to app");
 		loginpage.login(prop.getProperty("ValidEmail"), prop.getProperty("ValidPassword"));
-		String curl = driver.getCurrentUrl();
 		
+		logger.info("assertion");
+		String curl = driver.getCurrentUrl();
 		Assert.assertEquals(loginpage.getLoginPageUrl(),curl);
 
 	}
