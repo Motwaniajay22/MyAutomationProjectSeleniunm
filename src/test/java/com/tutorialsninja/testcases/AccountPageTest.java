@@ -1,6 +1,7 @@
 package com.tutorialsninja.testcases;
 
 
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -16,7 +17,7 @@ public class AccountPageTest extends BaseTest {
 	AccountPage account;
 
 	@Test
-	public void TC001_searchProduct() {
+	public void TC001_searchProduct()  {
 		homepage = new HomePage(driver);
 		logger.info("Navigating to login page");
 		homepage.navigateToLoginPage();
@@ -47,7 +48,13 @@ public class AccountPageTest extends BaseTest {
 		account.confirmButton();
 		
 		logger.info("Validation actual and expected result");
-		Assert.assertEquals("Your order has been placed!", "Your order has been placed!");
+		System.out.println();
+				
+		
+		System.out.println(account.orderconfirmMsg());
+		
+		
+//		Assert.assertEquals(text, "Your order has been placed!");
 
 	}
 }

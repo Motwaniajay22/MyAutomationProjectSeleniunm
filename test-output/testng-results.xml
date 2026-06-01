@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-01T22:48:57 IST" name="Default suite" finished-at="2026-06-01T22:49:12 IST" duration-ms="14406">
+  <suite started-at="2026-06-01T23:16:29 IST" name="Default suite" finished-at="2026-06-01T23:16:43 IST" duration-ms="13897">
     <groups>
     </groups>
-    <test started-at="2026-06-01T22:48:57 IST" name="Default test" finished-at="2026-06-01T22:49:12 IST" duration-ms="14406">
+    <test started-at="2026-06-01T23:16:29 IST" name="Default test" finished-at="2026-06-01T23:16:43 IST" duration-ms="13897">
       <class name="com.tutorialsninja.testcases.AccountPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialsninja.testcases.AccountPageTest@6bea52d4]" started-at="2026-06-01T22:48:57 IST" name="setUp" finished-at="2026-06-01T22:49:01 IST" duration-ms="3820" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorialsninja.testcases.AccountPageTest@6bea52d4]" started-at="2026-06-01T23:16:29 IST" name="setUp" finished-at="2026-06-01T23:16:32 IST" duration-ms="3488" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC001_searchProduct()[pri:0, instance:com.tutorialsninja.testcases.AccountPageTest@6bea52d4]" started-at="2026-06-01T22:49:01 IST" name="TC001_searchProduct" finished-at="2026-06-01T22:49:11 IST" duration-ms="10165" status="PASS">
+        <test-method signature="TC001_searchProduct()[pri:0, instance:com.tutorialsninja.testcases.AccountPageTest@6bea52d4]" started-at="2026-06-01T23:16:32 IST" name="TC001_searchProduct" finished-at="2026-06-01T23:16:42 IST" duration-ms="9969" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC001_searchProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.testcases.AccountPageTest@6bea52d4]" started-at="2026-06-01T22:49:11 IST" name="tearDown" finished-at="2026-06-01T22:49:12 IST" duration-ms="339" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialsninja.testcases.AccountPageTest@6bea52d4]" started-at="2026-06-01T23:16:42 IST" name="tearDown" finished-at="2026-06-01T23:16:43 IST" duration-ms="357" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

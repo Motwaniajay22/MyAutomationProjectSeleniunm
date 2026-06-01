@@ -31,7 +31,7 @@ public class AccountPage {
 	private By paymentcontinue = By.id("button-payment-method");
 	private By agreechkbx = By.xpath("//input[@type='checkbox']");
 	private By cnfrmbtn = By.id("button-confirm");
-	private By ordercrmmsg = By.xpath("//*[@id='content']/h1");
+	private By ordercrmmsg = By.xpath("//div[@id='content']/h1");
 
 	public String myAccountGetText() {
 		action.waitUntilElementToBeVisible(myAccountText);
@@ -91,6 +91,10 @@ public class AccountPage {
 	
 	public String orderconfirmMsg()
 	{
+		return action.getText(ordercrmmsg);
+	}
+	
+	public String successMsg() {
 		return action.getText(ordercrmmsg);
 	}
 }

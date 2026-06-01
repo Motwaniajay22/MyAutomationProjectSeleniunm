@@ -13,7 +13,7 @@ public class Action {
 
     public Action(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20)); // Increased for Jenkins
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(30)); // Increased for Jenkins
     }
     
     public void clickJs(By locator) {
@@ -55,7 +55,7 @@ public class Action {
         }
     }
 
-    // ✅ ENTER TEXT
+    //  ENTER TEXT
     public void enterText(By locator, String value) {
         WebElement element = wait.until(
                 ExpectedConditions.visibilityOfElementLocated(locator)
@@ -64,24 +64,24 @@ public class Action {
         element.sendKeys(value);
     }
 
-    // ✅ GET TEXT
+    //  GET TEXT
     public String getText(By locator) {
         return wait.until(
                 ExpectedConditions.visibilityOfElementLocated(locator)
         ).getText();
     }
 
-    // ✅ WAIT FOR CLICKABLE
+    //  WAIT FOR CLICKABLE
     public WebElement waitForElementToBeClickable(By locator) {
         return wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
-    // ✅ WAIT FOR VISIBILITY
+    //  WAIT FOR VISIBILITY
     public WebElement waitUntilElementToBeVisible(By locator) {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-    // ✅ IS DISPLAYED (SAFE)
+    // IS DISPLAYED (SAFE)
     public boolean isDisplayed(By locator) {
         try {
             return wait.until(
@@ -92,19 +92,19 @@ public class Action {
         }
     }
 
-    // ✅ GET TITLE
+    //  GET TITLE
     public String getTitle(String title) {
         wait.until(ExpectedConditions.titleContains(title));
         return driver.getTitle();
     }
 
-    // ✅ GET URL
+    //  GET URL
     public String getUrl(String url) {
         wait.until(ExpectedConditions.urlContains(url));
         return driver.getCurrentUrl();
     }
 
-    // ✅ SCROLL TO ELEMENT
+    //  SCROLL TO ELEMENT
     public void scrollToElement(WebElement element) {
         try {
             ((JavascriptExecutor) driver).executeScript(
