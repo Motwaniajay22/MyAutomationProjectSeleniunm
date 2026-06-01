@@ -17,7 +17,7 @@ public class AccountPageTest extends BaseTest {
 	AccountPage account;
 
 	@Test
-	public void TC001_searchProduct()  {
+	public void TC001_searchProduct(){
 		homepage = new HomePage(driver);
 		logger.info("Navigating to login page");
 		homepage.navigateToLoginPage();
@@ -44,17 +44,19 @@ public class AccountPageTest extends BaseTest {
 		account.deliveryMethodContinueButton();
 		account.agreeChekbox();
 		account.paymentContinueButton();
+		
 		logger.info("Clicked on confirm button");
 		account.confirmButton();
+	
+		
 		
 		logger.info("Validation actual and expected result");
-		System.out.println();
-				
+		String text = account.orderconfirmMsg();
+		System.out.println(text);
+		System.out.println(driver.getCurrentUrl());
+		System.out.println(driver.getTitle());
+		Assert.assertEquals(text, "Your order has been placed!");
 		
-		System.out.println(account.orderconfirmMsg());
-		
-		
-//		Assert.assertEquals(text, "Your order has been placed!");
 
 	}
 }

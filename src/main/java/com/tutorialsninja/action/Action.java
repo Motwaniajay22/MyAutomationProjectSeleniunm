@@ -8,110 +8,103 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Action {
 
-    private WebDriver driver;
-    private WebDriverWait wait;
+	private WebDriver driver;
+	private WebDriverWait wait;
 
-    public Action(WebDriver driver) {
-        this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(30)); // Increased for Jenkins
-    }
-    
-    public void clickJs(By locator) {
+	public Action(WebDriver driver) {
+		this.driver = driver;
+		this.wait = new WebDriverWait(driver, Duration.ofSeconds(30)); // Increased for Jenkins
+	}
 
-        WebElement element = wait.until(
-                ExpectedConditions.elementToBeClickable(locator)
-        );
+	public void clickJs(By locator) {
 
-        scrollToElement(element);
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
 
-        // adjust for header
-        ((JavascriptExecutor) driver).executeScript("window.scrollBy(0, -100);");
+		scrollToElement(element);
 
-        // re-fetch after scroll
-        element = wait.until(
-                ExpectedConditions.refreshed(
-                        ExpectedConditions.elementToBeClickable(locator)
-                )
-        );
+		// adjust for header
+		((JavascriptExecutor) driver).executeScript("window.scrollBy(0, -100);");
 
-        element.click();
-    }
+		// re-fetch after scroll
+		element = wait.until(ExpectedConditions.refreshed(ExpectedConditions.elementToBeClickable(locator)));
 
-   //click
-    public void click(By locator) {
-        WebElement element = wait.until(
-                ExpectedConditions.visibilityOfElementLocated(locator)
-        );
+		element.click();
+	}
 
-        scrollToElement(element);
+	// click
+	public void click(By locator) {
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 
-        wait.until(ExpectedConditions.elementToBeClickable(locator));
+		scrollToElement(element);
 
-        try {
-            element.click();
-        } catch (Exception e) {
-            // Fallback for Jenkins/headless issues
-            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
-        }
-    }
+		wait.until(ExpectedConditions.elementToBeClickable(locator));
 
-    //  ENTER TEXT
-    public void enterText(By locator, String value) {
-        WebElement element = wait.until(
-                ExpectedConditions.visibilityOfElementLocated(locator)
-        );
-        element.clear();
-        element.sendKeys(value);
-    }
+		try {
+			element.click();
+		} catch (Exception e) {
+			// Fallback for Jenkins/headless issues
+			((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+		}
+	}
 
-    //  GET TEXT
-    public String getText(By locator) {
-        return wait.until(
-                ExpectedConditions.visibilityOfElementLocated(locator)
-        ).getText();
-    }
+	// ENTER TEXT
+	public void enterText(By locator, String value) {
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		element.clear();
+		element.sendKeys(value);
+	}
 
-    //  WAIT FOR CLICKABLE
-    public WebElement waitForElementToBeClickable(By locator) {
-        return wait.until(ExpectedConditions.elementToBeClickable(locator));
-    }
+	// GET TEXT
+	public String getTextByWeb(WebElement element) {
+		return wait.until(ExpectedConditions.visibilityOf(element)).getText();
+	}
 
-    //  WAIT FOR VISIBILITY
-    public WebElement waitUntilElementToBeVisible(By locator) {
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-    }
+	// GET TEXT
+	public String getText(By locator) {
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(locator)).getText();
+	}
 
-    // IS DISPLAYED (SAFE)
-    public boolean isDisplayed(By locator) {
-        try {
-            return wait.until(
-                    ExpectedConditions.visibilityOfElementLocated(locator)
-            ).isDisplayed();
-        } catch (TimeoutException e) {
-            return false;
-        }
-    }
+	// WAIT FOR CLICKABLE
+	public WebElement waitForElementToBeClickable(By locator) {
+		return wait.until(ExpectedConditions.elementToBeClickable(locator));
+	}
 
-    //  GET TITLE
-    public String getTitle(String title) {
-        wait.until(ExpectedConditions.titleContains(title));
-        return driver.getTitle();
-    }
+	// WAIT FOR VISIBILITY
+	public WebElement waitUntilElementToBeVisible(By locator) {
+		return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+	}
 
-    //  GET URL
-    public String getUrl(String url) {
-        wait.until(ExpectedConditions.urlContains(url));
-        return driver.getCurrentUrl();
-    }
+	// IS DISPLAYED (SAFE)
+	public boolean isDisplayed(By locator) {
+		try {
+			return wait.until(ExpectedConditions.visibilityOfElementLocated(locator)).isDisplayed();
+		} catch (TimeoutException e) {
+			return false;
+		}
+	}
 
-    //  SCROLL TO ELEMENT
-    public void scrollToElement(WebElement element) {
-        try {
-            ((JavascriptExecutor) driver).executeScript(
-                    "arguments[0].scrollIntoView({block: 'center'});", element
-            );
-        } catch (Exception e) {
-            // Ignore if scroll fails
-        }
-    }
+	// GET TITLE
+	public String getTitle(String title) {
+		wait.until(ExpectedConditions.titleContains(title));
+		return driver.getTitle();
+	}
+
+	public boolean waitForUrlContains(String urlPart) {
+		return wait.until(ExpectedConditions.urlContains(urlPart));
+	}
+
+	// GET URL
+	public String getUrl(String url) {
+		wait.until(ExpectedConditions.urlContains(url));
+		return driver.getCurrentUrl();
+	}
+
+	// SCROLL TO ELEMENT
+	public void scrollToElement(WebElement element) {
+		try {
+			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", element);
+		} catch (Exception e) {
+			// Ignore if scroll fails
+		}
+	}
 }

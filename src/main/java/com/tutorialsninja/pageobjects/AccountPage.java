@@ -2,6 +2,8 @@ package com.tutorialsninja.pageobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.tutorialsninja.action.Action;
@@ -31,7 +33,10 @@ public class AccountPage {
 	private By paymentcontinue = By.id("button-payment-method");
 	private By agreechkbx = By.xpath("//input[@type='checkbox']");
 	private By cnfrmbtn = By.id("button-confirm");
-	private By ordercrmmsg = By.xpath("//div[@id='content']/h1");
+	private By ordercrmmsg = By.xpath("//*[@id='content']/h1");
+//	@FindBy(xpath = "//div[@id='content']/h1") 
+//	private WebElement ordercrmmsg;
+//	 
 
 	public String myAccountGetText() {
 		action.waitUntilElementToBeVisible(myAccountText);
@@ -91,10 +96,8 @@ public class AccountPage {
 	
 	public String orderconfirmMsg()
 	{
-		return action.getText(ordercrmmsg);
+		action.waitForUrlContains("checkout/success");
+	    return action.getText(ordercrmmsg);
 	}
 	
-	public String successMsg() {
-		return action.getText(ordercrmmsg);
-	}
 }
