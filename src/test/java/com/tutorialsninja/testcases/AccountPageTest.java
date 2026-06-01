@@ -16,27 +16,37 @@ public class AccountPageTest extends BaseTest {
 	AccountPage account;
 
 	@Test
-	public void searchProduct() throws InterruptedException {
+	public void TC001_searchProduct() {
 		homepage = new HomePage(driver);
+		logger.info("Navigating to login page");
 		homepage.navigateToLoginPage();
 		loginpage = new LoginPage(driver);
+		logger.info("Entered valid username and password");
 		loginpage.login(prop.getProperty("ValidEmail"), prop.getProperty("ValidPassword"));
 		account = new AccountPage(driver);
 		
+		logger.info("Product searched");
 		account.searchText("Hp");
+		logger.info("Clicked on search button");
 		account.searchButton();
+		logger.info("Clicked on addtocart button");
 		account.addToCartButton();
+		logger.info("Clicked on addCartToItem button");
 		account.addCartToItem();
-		Thread.sleep(3000);
+		logger.info("Clicked on itemCartButton button");
 		account.itemCartButton();
+		logger.info("Clicked on checkOut button");
 		account.checkOut();
+		logger.info("Selecting details");
 		account.bilingContinuebutton();
 		account.deliveryContinueButton();
 		account.deliveryMethodContinueButton();
 		account.agreeChekbox();
 		account.paymentContinueButton();
+		logger.info("Clicked on confirm button");
 		account.confirmButton();
 		
+		logger.info("Validation actual and expected result");
 		Assert.assertEquals("Your order has been placed!", "Your order has been placed!");
 
 	}

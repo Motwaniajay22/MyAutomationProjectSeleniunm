@@ -3043,3 +3043,21 @@
 2026-05-26 00:42:06 INFO  com.tutorialsninja.base.BaseTest - logged in to app
 2026-05-26 00:42:07 INFO  com.tutorialsninja.base.BaseTest - assertion
 2026-05-26 00:42:08 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-06-01 22:42:01 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-06-01 22:42:19 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-06-01 22:44:16 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-06-01 22:44:29 INFO  com.tutorialsninja.base.BaseTest - Validation actual and expected result
+2026-06-01 22:44:30 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-06-01 22:48:57 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-06-01 22:49:01 INFO  com.tutorialsninja.base.BaseTest - Navigating to login page
+2026-06-01 22:49:02 INFO  com.tutorialsninja.base.BaseTest - Entered valid username and password
+2026-06-01 22:49:04 INFO  com.tutorialsninja.base.BaseTest - Product searched
+2026-06-01 22:49:04 INFO  com.tutorialsninja.base.BaseTest - Clicked on search button
+2026-06-01 22:49:04 INFO  com.tutorialsninja.base.BaseTest - Clicked on addtocart button
+2026-06-01 22:49:05 INFO  com.tutorialsninja.base.BaseTest - Clicked on addCartToItem button
+2026-06-01 22:49:06 INFO  com.tutorialsninja.base.BaseTest - Clicked on itemCartButton button
+2026-06-01 22:49:06 INFO  com.tutorialsninja.base.BaseTest - Clicked on checkOut button
+2026-06-01 22:49:06 INFO  com.tutorialsninja.base.BaseTest - Selecting details
+2026-06-01 22:49:10 INFO  com.tutorialsninja.base.BaseTest - Clicked on confirm button
+2026-06-01 22:49:11 INFO  com.tutorialsninja.base.BaseTest - Validation actual and expected result
+2026-06-01 22:49:12 INFO  com.tutorialsninja.base.BaseTest - browser Closed
