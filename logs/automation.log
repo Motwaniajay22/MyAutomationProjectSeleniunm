@@ -3367,3 +3367,122 @@
 2026-06-02 00:34:11 INFO  com.tutorialsninja.base.BaseTest - Clicked on confirm button
 2026-06-02 00:34:11 INFO  com.tutorialsninja.base.BaseTest - Validation actual and expected result
 2026-06-02 00:34:12 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-06-02 00:35:44 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-06-02 00:35:51 INFO  com.tutorialsninja.base.BaseTest - Navigating to login page
+2026-06-02 00:35:53 INFO  com.tutorialsninja.base.BaseTest - Entered valid username and password
+2026-06-02 00:35:55 INFO  com.tutorialsninja.base.BaseTest - Product searched
+2026-06-02 00:35:56 INFO  com.tutorialsninja.base.BaseTest - Clicked on search button
+2026-06-02 00:35:56 INFO  com.tutorialsninja.base.BaseTest - Clicked on addtocart button
+2026-06-02 00:35:57 INFO  com.tutorialsninja.base.BaseTest - Clicked on addCartToItem button
+2026-06-02 00:35:58 INFO  com.tutorialsninja.base.BaseTest - Clicked on itemCartButton button
+2026-06-02 00:35:58 INFO  com.tutorialsninja.base.BaseTest - Clicked on checkOut button
+2026-06-02 00:35:59 INFO  com.tutorialsninja.base.BaseTest - Selecting details
+2026-06-02 00:36:03 INFO  com.tutorialsninja.base.BaseTest - Clicked on confirm button
+2026-06-02 00:36:04 INFO  com.tutorialsninja.base.BaseTest - Validation actual and expected result
+2026-06-02 00:36:06 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-06-02 23:30:08 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-06-02 23:30:16 INFO  com.tutorialsninja.base.BaseTest - TC001_validLogin()  started
+2026-06-02 23:30:16 INFO  com.tutorialsninja.base.BaseTest - Clicked on My Account drop-down and clicked on login option
+2026-06-02 23:30:18 INFO  com.tutorialsninja.base.BaseTest - User name and Password entered and clicked on login button
+2026-06-02 23:30:49 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-06-02 23:30:49 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-06-02 23:30:52 INFO  com.tutorialsninja.base.BaseTest - TC002_loginWithValidUserAndInvalidPassword() Started
+2026-06-02 23:30:52 INFO  com.tutorialsninja.base.BaseTest - Navigate to login page
+2026-06-02 23:30:52 INFO  com.tutorialsninja.base.BaseTest - Entered valid email and in valid password, clicked on login button
+2026-06-02 23:30:54 INFO  com.tutorialsninja.base.BaseTest - comparing result
+2026-06-02 23:30:54 INFO  com.tutorialsninja.base.BaseTest - TC002_loginWithValidUserAndInvalidPassword() Passed
+2026-06-02 23:30:54 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-06-02 23:30:54 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-06-02 23:30:57 INFO  com.tutorialsninja.base.BaseTest - TC003_loginWithInvalidUserAndValidPassword() Started
+2026-06-02 23:30:59 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-06-02 23:30:59 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-06-02 23:31:02 INFO  com.tutorialsninja.base.BaseTest - TC004_loginWithInvalidUserAndPassword()  Started
+2026-06-02 23:31:04 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-06-02 23:31:04 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-06-02 23:31:06 INFO  com.tutorialsninja.base.BaseTest - TC005_verifyLoginPageTitle()  Started
+2026-06-02 23:31:06 INFO  com.tutorialsninja.base.BaseTest - navigate to loginpage
+2026-06-02 23:31:07 INFO  com.tutorialsninja.base.BaseTest - logged in to app
+2026-06-02 23:31:09 INFO  com.tutorialsninja.base.BaseTest - assertion
+2026-06-02 23:31:09 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-06-02 23:31:09 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-06-02 23:31:11 INFO  com.tutorialsninja.base.BaseTest - TC006_verifyLoginPageUrl() Started
+2026-06-02 23:31:11 INFO  com.tutorialsninja.base.BaseTest - navigate to loginpage
+2026-06-02 23:31:12 INFO  com.tutorialsninja.base.BaseTest - logged in to app
+2026-06-02 23:31:14 INFO  com.tutorialsninja.base.BaseTest - assertion
+2026-06-02 23:31:14 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-06-02 23:31:14 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-06-02 23:31:16 INFO  com.tutorialsninja.base.BaseTest - TC002_registerWithoutEmail() Started
+2026-06-02 23:31:19 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-06-02 23:31:19 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-06-02 23:31:22 INFO  com.tutorialsninja.base.BaseTest - TC003_registerWithExistingEmail() Started
+2026-06-02 23:31:25 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-06-02 23:31:25 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-06-02 23:31:28 INFO  com.tutorialsninja.base.BaseTest - Navigating to login page
+2026-06-02 23:31:29 INFO  com.tutorialsninja.base.BaseTest - Entered valid username and password
+2026-06-02 23:31:31 INFO  com.tutorialsninja.base.BaseTest - Product searched
+2026-06-02 23:31:31 INFO  com.tutorialsninja.base.BaseTest - Clicked on search button
+2026-06-02 23:31:31 INFO  com.tutorialsninja.base.BaseTest - Clicked on addtocart button
+2026-06-02 23:31:32 INFO  com.tutorialsninja.base.BaseTest - Clicked on addCartToItem button
+2026-06-02 23:31:33 INFO  com.tutorialsninja.base.BaseTest - Clicked on itemCartButton button
+2026-06-02 23:31:34 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-06-02 23:34:56 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-06-02 23:35:00 INFO  com.tutorialsninja.base.BaseTest - Navigating to login page
+2026-06-02 23:35:01 INFO  com.tutorialsninja.base.BaseTest - Entered valid username and password
+2026-06-02 23:35:09 INFO  com.tutorialsninja.base.BaseTest - Product searched
+2026-06-02 23:35:09 INFO  com.tutorialsninja.base.BaseTest - Clicked on search button
+2026-06-02 23:35:10 INFO  com.tutorialsninja.base.BaseTest - Clicked on addtocart button
+2026-06-02 23:35:10 INFO  com.tutorialsninja.base.BaseTest - Clicked on addCartToItem button
+2026-06-02 23:35:11 INFO  com.tutorialsninja.base.BaseTest - Clicked on itemCartButton button
+2026-06-02 23:35:14 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-06-02 23:35:23 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-06-02 23:35:27 INFO  com.tutorialsninja.base.BaseTest - Navigating to login page
+2026-06-02 23:35:27 INFO  com.tutorialsninja.base.BaseTest - Entered valid username and password
+2026-06-02 23:35:28 INFO  com.tutorialsninja.base.BaseTest - Product searched
+2026-06-02 23:35:29 INFO  com.tutorialsninja.base.BaseTest - Clicked on search button
+2026-06-02 23:35:30 INFO  com.tutorialsninja.base.BaseTest - Clicked on addtocart button
+2026-06-02 23:35:30 INFO  com.tutorialsninja.base.BaseTest - Clicked on addCartToItem button
+2026-06-02 23:35:31 INFO  com.tutorialsninja.base.BaseTest - Clicked on itemCartButton button
+2026-06-02 23:35:32 INFO  com.tutorialsninja.base.BaseTest - Clicked on checkOut button
+2026-06-02 23:35:33 INFO  com.tutorialsninja.base.BaseTest - Selecting details
+2026-06-02 23:35:36 INFO  com.tutorialsninja.base.BaseTest - Clicked on confirm button
+2026-06-02 23:35:37 INFO  com.tutorialsninja.base.BaseTest - Validation actual and expected result
+2026-06-02 23:35:38 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-06-02 23:41:56 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-06-02 23:41:59 INFO  com.tutorialsninja.base.BaseTest - Navigating to login page
+2026-06-02 23:42:00 INFO  com.tutorialsninja.base.BaseTest - Entered valid username and password
+2026-06-02 23:42:04 INFO  com.tutorialsninja.base.BaseTest - Product searched
+2026-06-02 23:42:04 INFO  com.tutorialsninja.base.BaseTest - Clicked on search button
+2026-06-02 23:42:05 INFO  com.tutorialsninja.base.BaseTest - Clicked on addtocart button
+2026-06-02 23:42:05 INFO  com.tutorialsninja.base.BaseTest - Clicked on addCartToItem button
+2026-06-02 23:42:06 INFO  com.tutorialsninja.base.BaseTest - Clicked on itemCartButton button
+2026-06-02 23:42:06 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-06-02 23:42:21 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-06-02 23:42:26 INFO  com.tutorialsninja.base.BaseTest - Navigating to login page
+2026-06-02 23:42:26 INFO  com.tutorialsninja.base.BaseTest - Entered valid username and password
+2026-06-02 23:42:28 INFO  com.tutorialsninja.base.BaseTest - Product searched
+2026-06-02 23:42:28 INFO  com.tutorialsninja.base.BaseTest - Clicked on search button
+2026-06-02 23:42:29 INFO  com.tutorialsninja.base.BaseTest - Clicked on addtocart button
+2026-06-02 23:42:29 INFO  com.tutorialsninja.base.BaseTest - Clicked on addCartToItem button
+2026-06-02 23:42:30 INFO  com.tutorialsninja.base.BaseTest - Clicked on itemCartButton button
+2026-06-02 23:42:30 INFO  com.tutorialsninja.base.BaseTest - Clicked on checkOut button
+2026-06-02 23:42:31 INFO  com.tutorialsninja.base.BaseTest - Selecting details
+2026-06-02 23:42:34 INFO  com.tutorialsninja.base.BaseTest - Clicked on confirm button
+2026-06-02 23:42:35 INFO  com.tutorialsninja.base.BaseTest - Validation actual and expected result
+2026-06-02 23:42:36 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-06-02 23:42:43 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-06-02 23:42:47 INFO  com.tutorialsninja.base.BaseTest - Navigating to login page
+2026-06-02 23:42:47 INFO  com.tutorialsninja.base.BaseTest - Entered valid username and password
+2026-06-02 23:42:49 INFO  com.tutorialsninja.base.BaseTest - Product searched
+2026-06-02 23:42:49 INFO  com.tutorialsninja.base.BaseTest - Clicked on search button
+2026-06-02 23:42:50 INFO  com.tutorialsninja.base.BaseTest - Clicked on addtocart button
+2026-06-02 23:42:50 INFO  com.tutorialsninja.base.BaseTest - Clicked on addCartToItem button
+2026-06-02 23:42:51 INFO  com.tutorialsninja.base.BaseTest - Clicked on itemCartButton button
+2026-06-02 23:42:52 INFO  com.tutorialsninja.base.BaseTest - Clicked on checkOut button
+2026-06-02 23:42:52 INFO  com.tutorialsninja.base.BaseTest - Selecting details
+2026-06-02 23:42:56 INFO  com.tutorialsninja.base.BaseTest - Clicked on confirm button
+2026-06-02 23:42:56 INFO  com.tutorialsninja.base.BaseTest - Validation actual and expected result
+2026-06-02 23:42:58 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-06-02 23:45:29 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-06-02 23:45:43 INFO  com.tutorialsninja.base.BaseTest - browser Closed
+2026-06-02 23:47:41 INFO  com.tutorialsninja.base.BaseTest - Launching browser
+2026-06-02 23:47:55 INFO  com.tutorialsninja.base.BaseTest - browser Closed

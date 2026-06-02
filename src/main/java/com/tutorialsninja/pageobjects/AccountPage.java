@@ -2,8 +2,6 @@ package com.tutorialsninja.pageobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.tutorialsninja.action.Action;
@@ -23,7 +21,7 @@ public class AccountPage {
 	private By myAccountText = By.xpath("//h2[contains(text(),'My Account')]");
 	private By search = By.xpath("//input[@name='search']");
 	private By searchBtn = By.xpath("//button[@type='button']//i[@class='fa fa-search']");
-	private By addtocart = By.xpath("//span[contains(text(), 'Add to Cart')]");
+	private By addtocart = By.xpath("//button[contains(@onclick,'cart.add')]");
 	private By addcart = By.id("button-cart");
 	private By itemcart = By.xpath("//span[@id='cart-total']");
 	private By checkout = By.xpath("//*[@id='cart']/ul/li[2]/div/p/a[2]");
@@ -34,9 +32,7 @@ public class AccountPage {
 	private By agreechkbx = By.xpath("//input[@type='checkbox']");
 	private By cnfrmbtn = By.id("button-confirm");
 	private By ordercrmmsg = By.xpath("//*[@id='content']/h1");
-//	@FindBy(xpath = "//div[@id='content']/h1") 
-//	private WebElement ordercrmmsg;
-//	 
+	 
 
 	public String myAccountGetText() {
 		action.waitUntilElementToBeVisible(myAccountText);
